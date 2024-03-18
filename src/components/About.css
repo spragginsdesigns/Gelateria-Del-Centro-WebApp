@@ -1,0 +1,122 @@
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+    gap: 20px; /* Adds some space between the columns */
+    align-items: start; /* Aligns the content to the top */
+    justify-content: center; /* Horizontally centers the content */
+    padding: 20px; /* Adds some space around the content */
+    margin: 0 auto; /* Adds equal whitespace on the left and right */
+    max-width: 1200px; /* Adjust as needed */
+    padding-top: 80px;
+    color: #978431; /* Changes the font color */
+    font-family: Georgia, serif; /* Changes the font family */
+}
+
+
+
+.description {
+    padding: 20px; /* Adds some space inside the description */
+    position: relative; /* Needed for the pseudo-element */
+    text-align: left;
+}
+
+.description::after {
+    content: "";
+    position: absolute;
+    right: -10px; /* Adjust as needed */
+    top: 0;
+    bottom: 0;
+    width: 1px; /* Adjust as needed */
+    background: linear-gradient(to bottom, #ff7eb9, #ff007d); /* Adjust as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
+    border-radius: 50%; /* Makes the line slightly rounded */
+    margin: 20px 0; /* Adds some space above and below the line */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Adds a drop shadow */
+    border-radius: 70%;
+            /* Makes the line slightly rounded */
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ff7eb9, #ff007d);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 70%;
+    margin: 20px auto; /* Centers the line horizontally */
+    width: 50%; /* Adjust as needed */
+}
+
+
+@media (max-width: 768px) {
+    .description::after {
+        position: relative;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        margin: 20px 0; /* Adds some space above and below the line */
+    }
+}
+
+.store-logo {
+    width: 100%;
+    max-width: 150px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adds some space below the logo */
+}
+
+.description, .sidebar {
+    padding: 20px; /* Adds some space inside the description and sidebar */
+}
+
+.sidebar {
+    padding: 20px; /* Adds some space inside the sidebar */
+    text-align: right; /* Aligns the text to the right */
+    position: sticky; /* Makes the sidebar stick to the top of the viewport */
+    top: 0; /* Aligns the sidebar with the top of the viewport */
+    color: #978431;
+        /* Changes the font color */
+        font-family: Georgia, serif;
+        /* Changes the font family */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Stacks the columns vertically on smaller screens */
+    }
+
+    .sidebar {
+        position: static; /* Resets the position on smaller screens */
+        text-align: left; /* Aligns the text to the left on smaller screens */
+    }
+}
+
+.about-container h1, 
+.about-container h2, 
+.about-container h3, 
+.about-container h4, 
+.about-container h5, 
+.about-container h6 {
+    color: #ffa5b2; /* Soft Pink */
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Stacks the columns vertically on smaller screens */
+    }
+
+    .sidebar {
+        text-align: left; /* Aligns the text to the left on smaller screens */
+    }
+}

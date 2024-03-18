@@ -6,6 +6,18 @@ body {
     padding: 0;
 }
 
+.navbar-container {
+    background-image: url('../assets/scalloped-border.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 177px; /* Set to the original height of your image */
+    font-size: 3.2vw;
+        /* Adjust as needed */
+        font-family: Monterio;
+        /* Adjust as needed */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,26 +25,23 @@ body {
     color: white;
     padding: 20px 20px;
     position: relative;
-    background-image: url('../assets/scalloped-border.svg'); /* Set the SVG as the background */
-    background-repeat:no-repeat; /* Do not repeat the background image */
-    background-size: cover; /* Stretch the background image to fill the entire container */
-    background-position: center; /* Position the background image at the top of the container */
-    z-index: 1; /* Ensure the navbar is above the decorative background */}
-
+    z-index: 1;
+    max-width: 1799px; /* Set to the original width of your image */
+    width: 100%; /* Take up full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: auto; /* Center the navbar */
+}
 
 .navbar-address {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 1;
-    padding: 2% 10%;
     padding-left: 20px;
- 
 }
 
 .navbar-link {
     color: white;
-    padding: 2% 10%;    
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -45,20 +54,31 @@ body {
 
 .navbar-link:hover {
     background-color: #ff7043;
-    /* darker coral on hover */
 }
 
-/* Ensure the background image is not obscured by padding */
 .navbar::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%; /* Adjust this value to match the height of your SVG image */
+    height: 100%;
     background-repeat: repeat-x;
     background-position: bottom;
-    z-index: 0; /* Send the decorative background to the back */
+    z-index: 0;
 }
 
-/* Add your responsive adjustments here if necessary */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-address {
+        padding: 2% 10%;
+    }
+
+    .navbar-link {
+        padding: 2% 10%;
+    }
+}
