@@ -68,6 +68,13 @@ hr {
     width: 100%;
     max-width: 150px; /* Adjust as needed */
     margin-bottom: 20px; /* Adds some space below the logo */
+    border-radius: 50%; /* Makes the logo slightly rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
+    /* Center the logo image in the center of the grid */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .description, .sidebar {

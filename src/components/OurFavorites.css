@@ -1,0 +1,26 @@
+.favorites-container {
+    text-align: center;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a grid with 3 columns */
+    gap: 20px; /* Adds some space between the cards */
+    justify-items: center; /* Centers the cards */
+}
+
+.favorite-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out; /* Adds a transition effect */
+}
+
+.favorite-card img {
+    width: 100%; /* Makes the image take up the full width of the card */
+    height: auto; /* Keeps the aspect ratio of the image */
+    object-fit: cover; /* Makes the image cover the entire area of the card */
+}
+.favorite-card:hover {
+    transform: scale(1.05); /* Scales the card up slightly */
+}

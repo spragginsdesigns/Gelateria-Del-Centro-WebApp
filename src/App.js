@@ -1,13 +1,13 @@
-// App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/navbar'; // Changed 'Navbar' to 'navbar'
-import HeroCarousel from './components/HeroCarousel'; // Added this line
-import './components/navbar.css'; // Make sure this path correctly points to your CSS file
-import './components/HeroCarousel.css'
+import Navbar from './components/navbar';
+import HeroCarousel from './components/HeroCarousel';
 import About from './components/about';
-// use react.fragment instead of router;
+import OurFavoritesMenu from './components/OurFavorites';
+import './components/navbar.css';
+import './components/HeroCarousel.css'
+import './components/OurFavorites.css'; // Updated the import statement
+
 
 function App() {
   return (
@@ -16,11 +16,10 @@ function App() {
         <Navbar />
         <HeroCarousel />
         <About />
-        {/* Routes will go here */}
+        <OurFavoritesMenu />
       </div>
     </Router>
   );
 }
-
 
 export default App;
