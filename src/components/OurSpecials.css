@@ -1,32 +1,33 @@
-.favorites-container {
+.specials-container {
     text-align: center;
     color: #978431; /* Changes the font color */
     font-family: Georgia, serif; /* Changes the font family */
 }
 
-.favorites-grid {
+.specials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
 }
 
-.favorite-card {
+.special-card {
     border: 1px solid #ccc;
     padding: 20px;
     max-width: 300px;
     transition: transform 0.3s ease-in-out;
 }
 
-.favorite-card h2 {
+.special-card h2 {
     color: #66cc7f; /* Changes the color of the flavor name to Mint Green */
 }
 
-.favorite-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.special-card:hover {
+    transform: scale(1.05);
 }
-.favorite-card:hover {
-    transform: scale(1.05); /* Scales the card up slightly */
+
+.special-card img {
+    width: 100%; /* Makes the image take up the full width of the card */
+    height: auto; /* Keeps the aspect ratio of the image */
+    object-fit: cover; /* Makes the image cover the entire area of the card */
 }

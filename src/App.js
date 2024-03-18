@@ -4,10 +4,13 @@ import Navbar from './components/navbar';
 import HeroCarousel from './components/HeroCarousel';
 import About from './components/about';
 import OurFavoritesMenu from './components/OurFavorites';
+import OurSpecials from './components/OurSpecials';
+import Contact from './components/contact';
 import './components/navbar.css';
 import './components/HeroCarousel.css'
-import './components/OurFavorites.css'; // Updated the import statement
-
+import './components/OurFavorites.css';
+import './components/OurSpecials.css';
+import './components/About.css'; // Corrected the import statement
 
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
         <HeroCarousel />
         <About />
         <OurFavoritesMenu />
+        <OurSpecials />
+        <Contact />
       </div>
     </Router>
   );

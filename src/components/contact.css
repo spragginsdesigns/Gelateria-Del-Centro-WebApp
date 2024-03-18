@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+}
+
+.contact-container {
+    text-align: center;
+    color: #978431;
+    font-family: Georgia, serif;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: auto; /* Centers the grid */
+    width: 90%; /* Adjust this value as needed */
+}
+
+.map iframe {
+    width: 140%; /* Adjust this value as needed */
+    height: 100%;
+    margin-left: -30%; /* Adjust this value as needed */
+    margin-right: -50%; /* Adjust this value as needed */
+}
+
+.form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
