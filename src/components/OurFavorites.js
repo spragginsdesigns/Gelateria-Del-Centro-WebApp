@@ -19,6 +19,9 @@ const OurFavorites = () => {
         <div className="favorites-container">
             <h1>Our Favorites</h1>
             <p>Always available, Always Delicious</p>
+            <a href="/GDC-Menu.pdf" download>
+                <button className="download-button">Download Menu</button>
+            </a>
             <div className="favorites-grid">
                 {favorites.map((favorite, index) => (
                     <div key={index} className="favorite-card">

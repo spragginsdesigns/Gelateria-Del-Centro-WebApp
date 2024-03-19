@@ -4,6 +4,28 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+/* Download Menu Button */
+
+.download-button {
+    background-color: #eb6368; /* Pink background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition-duration: 0.4s; /* Transition */
+    margin-bottom: 5%;
+}
+
+.download-button:hover {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+}
 .favorites-container {
     text-align: center;
     color: #978431; /* Changes the font color */

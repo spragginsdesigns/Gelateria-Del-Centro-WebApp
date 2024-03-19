@@ -1,9 +1,9 @@
-.footer {
+.FooterContainer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: rgba(248, 249, 250, 0.7); /* Semi-transparent background */
     color: black;
     text-align: center;
     padding: 20px;
@@ -12,7 +12,10 @@
     align-items: center;
     font-family: 'Monterio', sans-serif;
     background-image: url('../assets/footer-background1.jpg');
-    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Make the image cover the entire element */
     box-sizing: border-box; /* Includes the padding in the element's width */
 }
 
