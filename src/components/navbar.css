@@ -11,11 +11,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 177px; /* Set to the original height of your image */
+    min-height: 177px;
     font-size: 3.2vw;
-        /* Adjust as needed */
-        font-family: Monterio;
-        /* Adjust as needed */
+    font-family: Monterio;
 }
 
 .navbar {
@@ -26,10 +24,10 @@ body {
     padding: 20px 20px;
     position: relative;
     z-index: 1;
-    max-width: 1799px; /* Set to the original width of your image */
-    width: 100%; /* Take up full width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin: auto; /* Center the navbar */
+    max-width: 1799px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 .navbar-address {
@@ -68,16 +66,21 @@ body {
     z-index: 0;
 }
 
+.navbar-item.order-now {
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+}
+
+.navbar-item.order-now:hover {
+    color: #ff0000; /* Changes the text color to red when hovering over the link */
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .navbar-address {
-        padding: 2% 10%;
-    }
-
+    .navbar-address,
     .navbar-link {
         padding: 2% 10%;
     }

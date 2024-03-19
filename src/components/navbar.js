@@ -7,10 +7,10 @@ const Navbar = () => {
         <div className="navbar-container">
             <nav className="navbar">
                 <div className="navbar-item">
-                    2017 Tuolumne St Fresno, CA 93721
+                    <p>2017 Tuolumne St Fresno, CA 93721</p>
                 </div>
                 <Link className="navbar-item" to="/onlineOrdering">
-                    ORDER NOW
+                    <p className="order-now">ORDER NOW</p>
                 </Link>
             </nav>
         </div>

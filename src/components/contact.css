@@ -17,11 +17,15 @@ body {
     width: 90%; /* Adjust this value as needed */
 }
 
+@media (max-width: 412px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Makes the grid have 1 column on small screens */
+    }
+}
+
 .map iframe {
-    width: 140%; /* Adjust this value as needed */
+    width: 100%; /* Makes the iframe take up the full width of its container */
     height: 100%;
-    margin-left: -30%; /* Adjust this value as needed */
-    margin-right: -50%; /* Adjust this value as needed */
 }
 
 .form {

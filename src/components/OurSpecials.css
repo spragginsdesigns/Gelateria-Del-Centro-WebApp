@@ -9,6 +9,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr); /* Changes to 2 columns on larger screens */
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Changes to 1 column on medium screens */
+    }
 }
 
 .special-card {
