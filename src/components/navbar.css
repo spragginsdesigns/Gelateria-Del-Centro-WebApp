@@ -63,11 +63,12 @@ body {
     height: 100%;
     background-repeat: repeat-x;
     background-position: bottom;
-    z-index: 0;
+    z-index: -1;
 }
 
 .navbar-item.order-now {
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+    z-index: 2;
 }
 
 .navbar-item.order-now:hover {
