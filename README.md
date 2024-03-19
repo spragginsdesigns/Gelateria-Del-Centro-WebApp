@@ -39,9 +39,6 @@ Welcome to the repository for the Single-Page Application (SPA) of Gelateria Del
 **Technologies Used:**
 - ![Static Badge 1](https://img.shields.io/badge/Built%20With%20-%20ReactJS%20-%20%23121212%20?style=for-the-badge&logo=react)
 
-- ![Static Badge 2](https://img.shields.io/badge/Built%20With%20-%20TailwindCSS%20-%20%23121212%20?style=for-the-badge&logo=tailwindcss)
-
-
 Gelateria Del Centro's SPA aims to embody the essence of our physical shop's warm, welcoming atmosphere in a digital format. Through interactive menus, engaging visuals, and streamlined online ordering, we strive to provide an exceptional user experience that mirrors the joy of savoring our handmade gelatos.
 
 ## Getting Started
