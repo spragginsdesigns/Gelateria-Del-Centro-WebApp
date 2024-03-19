@@ -31,6 +31,7 @@
 }
 
 .service-card {
+    color: white;
     width: 45%; /* Adjust as needed */
     margin-bottom: 15px;
     padding: 20px;
@@ -43,6 +44,62 @@
 
 .service-card:hover {
     transform: scale(1.05); /* Add scale effect on hover */
+}
+
+/* Square Button Styles */
+.service-card.square .order-button {
+    background-color: #3E4348;
+    /* Square's brand color */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* DoorDash Button Styles */
+.service-card.doordash .order-button {
+    background-color: #FF3008;
+    /* DoorDash's brand color */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Uber Eats Button Styles */
+.service-card.ubereats .order-button {
+    background-color: #06C167;
+    /* Uber Eats's brand color */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal-content {
+    color: white;
+    background-image: url('../assets/warnors-image-1.jpg');
+    background-color: rgba(184, 68, 68, 0.7); /* More transparent background */
+    background-blend-mode: multiply;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Make the image cover the entire element */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
 }
 
 /* Additional individual service card styles go here */
