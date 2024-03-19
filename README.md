@@ -49,13 +49,13 @@ To view the project follow these steps on Windows, Mac, or Linux after installin
 1. Clone the repository:
     
     ```bash
-    git clone https://github.com/spragginsdesigns/gelateria-del-centro-WebApp.git
+    git clone https://github.com/spragginsdesigns/Gelateria-Del-Centro-WebApp.git
     ```
     
 2. Navigate to the project root directory:
     
     ```bash
-    cd gelateria-del-centro-WebApp
+    cd Gelateria-Del-Centro-WebApp
     ```
     
 3. Install dependencies using the NodeJS package manager:
