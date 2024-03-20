@@ -9,33 +9,45 @@ body {
 .navbar-container {
     background-image: url('../assets/scalloped-border.svg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top center;
+    background-size: contain;
+    /* Adjust the image size to contain within the navbar */
     min-height: 177px;
     font-size: 3.2vw;
-    font-family: Monterio;
+    font-family: 'Monterio', sans-serif;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    /* Spacing between items */
     align-items: center;
+    /* Vertical center alignment */
     color: white;
-    padding: 20px 20px;
+    padding: 0 20px;
+    /* Horizontal padding; remove vertical padding */
     position: relative;
     z-index: 1;
-    max-width: 1799px;
     width: 100%;
     box-sizing: border-box;
-    margin: auto;
+    margin: 0 auto;
+    /* Center the navbar */
 }
 
-.navbar-address {
+.navbar-item {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.navbar-item p {
+    margin: 0;
+    /* Remove default margin from paragraph elements */
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    z-index: 1;
-    padding-left: 20px;
 }
 
 .navbar-link {
@@ -45,44 +57,33 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .navbar-link:hover {
     background-color: #ff7043;
+    /* Hover effect for link */
 }
 
-.navbar::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    background-repeat: repeat-x;
-    background-position: bottom;
-    z-index: -1;
-}
-
-.navbar-item.order-now {
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+.order-now {
+    cursor: pointer;
     z-index: 2;
 }
 
-.navbar-item.order-now:hover {
-    color: #ff0000; /* Changes the text color to red when hovering over the link */
+.order-now:hover {
+    color: #d85353;
+    /* Hover effect for 'ORDER NOW' button */
 }
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
-        justify-content: space-between;
+        /* Stack items horizontally on smaller screens */
+        padding: 10px;
+        /* Reduced padding for smaller screens */
     }
 
-    .navbar-address,
-    .navbar-link {
-        padding: 2% 10%;
+    .navbar-item:not(:last-child) {
+        margin-right: 20px;
+        /* Add space between items when stacked */
     }
 }

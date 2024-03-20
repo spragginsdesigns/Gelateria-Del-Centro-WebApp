@@ -37,12 +37,38 @@ const FooterLink = styled.a`
     font-size: 36px; /* Makes the text bigger */
 `;
 
+// Social Media Links on Footer
+const SocialMediaLinks = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 150px; /* Adjust this value to change the space between the icons */
+    margin-top: 20px;
+`;
+
+const SocialMediaLink = styled.a`
+    color: black; /* Change this to the color you want */
+    text-decoration: none;
+    font-size: 36px; /* Makes the icon bigger */
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3)); /* Reduced drop shadow */
+`;
+
 const Footer = () => {
     return (
         <FooterContainer>
             <div>
                 <h2>Gelateria Del Centro</h2>
                 <p>1234 Street Name, City, State, Zip</p>
+                <SocialMediaLinks>
+                    <SocialMediaLink href="https://www.instagram.com/your_username">
+                        <i className="fab fa-instagram" style={{ color: '#C13584' }}></i> {/* Instagram color */}
+                    </SocialMediaLink>
+                    <SocialMediaLink href="https://www.facebook.com/your_username">
+                        <i className="fab fa-facebook-f" style={{ color: '#3B5998' }}></i> {/* Facebook color */}
+                    </SocialMediaLink>
+                    <SocialMediaLink href="https://www.linkedin.com/in/your_username">
+                        <i className="fab fa-linkedin-in" style={{ color: '#0E76A8' }}></i> {/* LinkedIn color */}
+                    </SocialMediaLink>
+                </SocialMediaLinks>
             </div>
             <FooterLinksContainer>
                 <FooterLink href="/our-story">Our Story</FooterLink>
