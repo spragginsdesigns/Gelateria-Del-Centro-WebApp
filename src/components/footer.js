@@ -11,7 +11,7 @@ const FooterContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     font-family: 'Monterio', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     background-size: cover;
     box-sizing: border-box; /* Includes the padding in the element's width */
 
