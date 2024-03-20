@@ -3,17 +3,25 @@ import styled from 'styled-components';
 import './navbar.css';
 
 const OrderButton = styled.button`
-  background-color: #ff6347; // Tomato color
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #ff6347; // Tomato color
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: #ff4500; // Orangered color
-  }
+    &:hover {
+        background-color: #ff4500; // Orangered color
+    }
+
+    @media (max-width: 415px) {
+        font-size: 14px; /* Decrease font size for smaller screens */
+        margin-left: auto; /* Push the button to the right */
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
 `;
 
 const Navbar = ({ toggleModal }) => {

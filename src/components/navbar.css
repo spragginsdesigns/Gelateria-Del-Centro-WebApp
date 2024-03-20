@@ -45,45 +45,55 @@ body {
 .navbar-item p {
     margin: 0;
     /* Remove default margin from paragraph elements */
-    font-size: 1.2rem;
+    font-size: 3.1rem;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
-.navbar-link {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.navbar-link:hover {
-    background-color: #ff7043;
-    /* Hover effect for link */
+@media (max-width: 415px) {
+    .navbar-item p {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
 }
 
 .order-now {
-    cursor: pointer;
+    background-color: #eb6368; /* Pink background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 20px; /* Rounded corners */
+    transition-duration: 0.4s; /* Transition */
+    margin-bottom: 5%;
     z-index: 2;
 }
 
 .order-now:hover {
-    color: #d85353;
-    /* Hover effect for 'ORDER NOW' button */
+    background-color: white; /* White background */
+    color: black; /* Black text */
 }
 
-@media (max-width: 768px) {
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@media (max-width: 415px) {
     .navbar {
         flex-direction: row;
-        /* Stack items horizontally on smaller screens */
+        justify-content: space-between; /* Align items to the left and right */
         padding: 10px;
-        /* Reduced padding for smaller screens */
     }
 
-    .navbar-item:not(:last-child) {
-        margin-right: 20px;
-        /* Add space between items when stacked */
+    .order-now {
+        transform: scale(0.8); /* Reduce the size of the button */
+        margin-left: auto; /* Push the button to the right */
+        margin-top: 0; /* Align the button to the top */
+        margin-right: 0; /* Remove right margin for smaller screens */
     }
 }

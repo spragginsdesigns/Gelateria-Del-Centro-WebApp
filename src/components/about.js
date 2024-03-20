@@ -20,7 +20,7 @@ const About = () => {
                     </ul>
                     <h2>Special Events</h2>
                     <p>Check out our special events!</p>
-                    <button>Learn More</button>
+                    <button className="learnMore-button">Learn More</button>
                     <h2>Our Why?</h2>
                     <p>Our mission is to provide the best gelato experience...</p>
                     {/* Rest of the "Our Why?" section */}

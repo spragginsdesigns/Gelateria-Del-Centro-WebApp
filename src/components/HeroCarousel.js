@@ -6,18 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 import './HeroCarousel.css';
 
 // Import images
-import menuImage1 from '../assets/8920982294.jpg';
-import menuImage2 from '../assets/8920982294.jpg';
-import menuImage3 from '../assets/8920982294.jpg';
-import menuImage4 from '../assets/8920982294.jpg';
+import menuImage1 from '../assets/shop-exterior-1.jpg';
+import menuImage2 from '../assets/shop-interior-2.jpg';
+import menuImage3 from '../assets/shop-exterior-3.jpg';
+import menuImage4 from '../assets/gelato-placeholder-1.jpg';
+import menuImage5 from '../assets/exterior-2.jpeg';
 
 function HeroCarousel() {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         autoplay: true
     };
 
@@ -40,6 +41,9 @@ function HeroCarousel() {
                 </div>
                 <div>
                     <img src={menuImage4} alt="Menu Item 4" />
+                </div>
+                <div>
+                    <img src={menuImage5} alt="Menu Item 5" />
                 </div>
             </Slider>
         </div>

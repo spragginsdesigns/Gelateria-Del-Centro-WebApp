@@ -17,7 +17,7 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer; /* Mouse pointer on hover */
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     transition-duration: 0.4s; /* Transition */
     margin-bottom: 5%;
 }
@@ -54,14 +54,20 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.favorite-card h2 {
-    color: #66cc7f; /* Changes the color of the flavor name to Mint Green */
+.favorite-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px; /* Add rounded corners to the cards */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a drop shadow */
 }
 
 .favorite-card img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 200px; /* Set a specific height for the images */
+    object-fit: cover; /* Cover the whole area of the container */
+    border-radius: 12px; /* Add rounded corners to the images */
 }
 .favorite-card:hover {
     transform: scale(1.05); /* Scales the card up slightly */

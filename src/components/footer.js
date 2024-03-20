@@ -5,8 +5,7 @@ import './footer.css';
 const FooterContainer = styled.div`
     width: 100%;
     color: black;
-    text-align: center;
-    padding: 20px;
+    padding: 5px; /* Adds space around the text */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +56,7 @@ const Footer = () => {
         <FooterContainer>
             <div>
                 <h2>Gelateria Del Centro</h2>
-                <p>1234 Street Name, City, State, Zip</p>
+                <p>559-824-5809</p>
                 <SocialMediaLinks>
                     <SocialMediaLink href="https://www.instagram.com/your_username">
                         <i className="fab fa-instagram" style={{ color: '#C13584' }}></i> {/* Instagram color */}

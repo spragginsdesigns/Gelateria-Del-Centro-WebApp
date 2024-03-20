@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* Carousel heading styles */
+/* TODO 1: Change to a h1 or <p> tag for Gelateria Del Centro Title Styling. */
 .carousel-heading {
     font-family: 'Monterio', sans-serif;
     font-size: 5.5vw; /* Relative to the viewport width */
@@ -101,19 +102,19 @@
     float: left;
     height: 100%;
     min-height: 1px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */ /* Commented out to remove drop shadow */
+    /* border-right: 1px solid pink; */ /* Commented out to remove divider */
+    box-sizing: border-box; /* Include the border in the element's total width and height */
     border-radius: 10px;
     overflow: hidden;
 }
 
 .slick-slide img {
     display: block;
-    width: 90%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-    object-position: center;
-    margin: auto;
+    width: 100%; /* Set the width to 100% of the container */
+    height: 100%; /* Set the height to 100% of the container */
+    object-fit: cover; /* Cover the whole area of the container */
+    object-position: center; /* Center the image within the container */
 }
 
 .slick-slide.slick-loading img {
