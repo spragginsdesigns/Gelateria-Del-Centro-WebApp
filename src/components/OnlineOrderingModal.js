@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './OnlineOrderingModal.css';
 import UberEatsLogo from '../assets/uber-eats-logos-idT_4VNf_n.svg'; // Import the logo
 import GrubHubLogo from '../assets/grubhub-logos-id2LENoj_F.svg'; // Import the logo
-import DoorDashLogo from '../assets/doordash-logos-ideBVsZqPB.svg'; // Import the logo
+import DoorDashLogo from '../assets/doordashlogo.svg'; // Import the logo
 import SquareLogo from '../assets/square-logos-idVBUxlM3x.svg'; // Import the logo
 
 const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
@@ -29,7 +29,7 @@ const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
                 <div className="service-container">
                     {/* Square Button JSX */}
                     <div className="service-card square">
-                        <h3>Square</h3>
+                        {/* <h3>Square</h3> */}
                         <img className="service-logo" src={SquareLogo} alt="Square" />
                         <p>Order through Square for pickup.</p>
                         <a href="https://eatgelato.square.site/" target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
                     {/* DoorDash Card */}
                     {/* DoorDash Button JSX */}
                     <div className="service-card doordash">
-                        <h3>DoorDash</h3>
+                        {/* <h3>DoorDash</h3> */}
                         <img className="service-logo" src={DoorDashLogo} alt="DoorDash" />
                         <p>Order through DoorDash for delivery.</p>
                         <a href="https://www.doordash.com/store/gelateria-del-centro-fresno-27971303/" target="_blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
                     </div>
                     {/* Uber Eats Card & Button */}
                     <div className="service-card ubereats">
-                        <h3>Uber Eats</h3>
+                        {/* <h3>Uber Eats</h3> */}
                         <img className="service-logo" src={UberEatsLogo} alt="Uber Eats" />
                         <p>Order through Uber Eats for delivery.</p>
                         <a href="https://www.ubereats.com/store/gelateria-del-centro/Ryr3N2GUXNOenW50_tbztQ?diningMode=DELIVERY&mod=storeDeliveryTime&modctx=%257B%2522entryPoint%2522%253A%2522store-auto-surface%2522%252C%2522encodedStoreUuid%2522%253A%2522Ryr3N2GUXNOenW50_tbztQ%2522%257D&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjkzNjAlMjBOJTIwQmxhY2tzdG9uZSUyMEF2ZSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMmhlcmUlM0FhZiUzQXN0cmVldHNlY3Rpb24lM0FLYVU1OFFkQTlzc2Y3Yi5pdzZBMERCJTNBQ2djSUJDRGdqTGdTRUFFYUJEa3pOakElMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyaGVyZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTM2Ljg3MDkyJTJDJTIybG9uZ2l0dWRlJTIyJTNBLTExOS43OTEyJTdE&ps=1" target="_blank" rel="noopener noreferrer">
@@ -57,7 +57,7 @@ const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
                     </div>
                     {/* GrubHub Card */}
                     <div className="service-card grubhub">
-                        <h3>Grubhub</h3>
+                        {/* <h3>Grubhub</h3> */}
                         <img className="service-logo" src={GrubHubLogo} alt="Grubhub" />
                         <p>Order through Grubhub for delivery.</p>
                         <div

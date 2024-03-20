@@ -26,8 +26,12 @@
 
 /* GrubHub, DoorDash, Square & Uber Eats Logos */
 .service-logo {
-    width: 100px; /* Adjust as needed */
+    width: 150px; /* Increase size */
     height: auto;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.7)); /* Increase drop shadow */
+    background-color: rgba(255, 255, 255, 0.3); /* Add semi-transparent background color */
+    border-radius: 10px; /* Add border radius to make the background color rounded */
+    padding: 10px; /* Add some padding to create space between the logo and the background color */
 }
 
 .service-card {
@@ -91,7 +95,7 @@
 .modal-content {
     color: white;
     background-image: url('../assets/warnors-image-1.jpg');
-    background-color: rgba(184, 68, 68, 0.7); /* More transparent background */
+    background-color: rgba(88, 101, 101, 0.7); /* More transparent background */
     background-blend-mode: multiply;
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
