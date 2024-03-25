@@ -111,8 +111,6 @@ To view the project follow these steps on Windows, Mac, or Linux after installin
 - **Responsive Design**: Media queries in the CSS reduce the number of columns to two or one based on the viewport width, ensuring the content remains accessible and visually appealing across devices.
 - **React Props and State**: These components can be further enhanced by using React state to dynamically load menu items or props to customize the component based on where it's used within the application.
 
-By combining React's component-based architecture with CSS Grid for layout and styling, `OurFavorites` and `OurSpecials` effectively showcase menu items in a visually appealing and organized manner, adaptable to various screen sizes.
-
 ### ContactFormSection (Component):
 - **Structure**: An interactive section allowing users to send messages or inquire about private events. Includes integration with Google Maps to display the shop's location.
 - **React Implementation**: This section includes styled-components for inputs and a button, utilizing `styled-components` for styling. The form is structured with semantic HTML and styled inputs, including a Google Maps iframe integration for the map.
