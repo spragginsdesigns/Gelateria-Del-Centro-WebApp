@@ -197,12 +197,11 @@ const Contact = () => {
         <div className="contact-container">
             <h1>Contact Us</h1>
             <div className="contact-grid">
-                <div className="map">
+                <div className="map-container" style={{ width: '100%', height: '100%' }}>
                     <iframe
+                        className="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.346088588112!2d-119.79685402450288!3d36.7382630722649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809461851bbeebb3%3A0xf3a3ddc02fe7be63!2sGelateria%20Del%20Centro!5e0!3m2!1sen!2sus!4v1710802270700!5m2!1sen!2sus"
-                        width="800"
-                        height="800"
-                        style={{ border: 0 }}
+                        style={{ border: 0, width: '100%', height: '100%' }}
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
