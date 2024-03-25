@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import logo from '../assets/Gelateria Del Centro STAMP.png'; // Import your logo
 
@@ -20,7 +21,7 @@ const About = () => {
                     </ul>
                     <h2>Special Events</h2>
                     <p>Check out our special events!</p>
-                    <button className="learnMore-button">Learn More</button>
+                    <Link to="/events" className="learnMore-button">Learn More</Link>
                     <h2>Our Why?</h2>
                     <p>Our mission is to provide the best gelato experience...</p>
                     {/* Rest of the "Our Why?" section */}

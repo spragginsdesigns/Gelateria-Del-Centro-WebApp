@@ -37,15 +37,19 @@ body {
 .navbar-item {
     display: flex;
     align-items: center;
-    /* Center items vertically */
-    justify-content: center;
-    /* Center items horizontally */
+}
+
+.navbar-item a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 40px;
 }
 
 .navbar-item p {
     margin: 0;
-    /* Remove default margin from paragraph elements */
     font-size: 3.1rem;
+    line-height: 3.1rem; /* Add this line */
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -53,47 +57,65 @@ body {
 
 @media (max-width: 415px) {
     .navbar-item p {
-        font-size: 1.5rem; /* Decrease font size for smaller screens */
+        font-size: 1.5rem;
+        /* Decrease font size for smaller screens */
     }
 }
 
 .order-now {
-    background-color: #eb6368; /* Pink background */
-    border: none; /* Remove border */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
+    background-color: #eb6368;
+    /* Pink background */
+    border: none;
+    /* Remove border */
+    color: white;
+    /* White text */
+    padding: 15px 32px;
+    /* Some padding */
+    text-align: center;
+    /* Centered text */
+    text-decoration: none;
+    /* Remove underline */
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer; /* Mouse pointer on hover */
-    border-radius: 20px; /* Rounded corners */
-    transition-duration: 0.4s; /* Transition */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+    border-radius: 20px;
+    /* Rounded corners */
+    transition-duration: 0.4s;
+    /* Transition */
     margin-bottom: 5%;
     z-index: 2;
 }
 
 .order-now:hover {
-    background-color: white; /* White background */
-    color: black; /* Black text */
+    background-color: white;
+    /* White background */
+    color: black;
+    /* Black text */
 }
 
 * {
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 @media (max-width: 415px) {
     .navbar {
         flex-direction: row;
-        justify-content: space-between; /* Align items to the left and right */
+        justify-content: space-between;
+        /* Align items to the left and right */
         padding: 10px;
     }
 
     .order-now {
-        transform: scale(0.8); /* Reduce the size of the button */
-        margin-left: auto; /* Push the button to the right */
-        margin-top: 0; /* Align the button to the top */
-        margin-right: 0; /* Remove right margin for smaller screens */
+        transform: scale(0.8);
+        /* Reduce the size of the button */
+        margin-left: auto;
+        /* Push the button to the right */
+        margin-top: 0;
+        /* Align the button to the top */
+        margin-right: 0;
+        /* Remove right margin for smaller screens */
     }
 }

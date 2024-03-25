@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import './contact.css';
 
@@ -58,6 +58,25 @@ const Sweet = styled.span`
 `;
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: '',
+    });
+
+    const handleChange = (event) => {
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value,
+        });
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(formData);
+    };
+
     return (
         <div className="contact-container">
             <h1>Contact Us</h1>
@@ -67,11 +86,11 @@ const Contact = () => {
                 </div>
                 <div className="form">
                     <h2>Leave Us a <Sweet>Sweet</Sweet> Message</h2>
-                    <form>
-                        <Input type="text" placeholder="Name" required />
-                        <Input type="tel" placeholder="Phone" required />
-                        <Input type="email" placeholder="Email" required />
-                        <TextArea placeholder="Message" required></TextArea>
+                    <form onSubmit={handleSubmit}>
+                        <Input type="text" name="name" placeholder="Name" required onChange={handleChange} />
+                        <Input type="tel" name="phone" placeholder="Phone" required onChange={handleChange} />
+                        <Input type="email" name="email" placeholder="Email" required onChange={handleChange} />
+                        <TextArea name="message" placeholder="Message" required onChange={handleChange}></TextArea>
                         <Button type="submit">Send</Button>
                     </form>
                 </div>
