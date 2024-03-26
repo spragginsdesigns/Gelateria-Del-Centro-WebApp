@@ -8,6 +8,10 @@ Welcome to the repository for the Single-Page Application (SPA) of Gelateria Del
 
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+  - [Troubleshooting](#troubleshooting)
 - [Project Structure](#project-structure)
   - [Navbar Component](#navbar-component)
   - [HeroCarousel Component](#herocarousel-component)
@@ -42,36 +46,61 @@ Welcome to the repository for the Single-Page Application (SPA) of Gelateria Del
 
 Gelateria Del Centro's SPA aims to embody the essence of our physical shop's warm, welcoming atmosphere in a digital format. Through interactive menus, engaging visuals, and streamlined online ordering, we strive to provide an exceptional user experience that mirrors the joy of savoring our handmade gelatos.
 
-## Getting Started
-
-To view the project follow these steps on Windows, Mac, or Linux after installing [NodeJS](https://nodejs.org/en/download):
-
-1. Clone the repository:
-    
-    ```bash
-    git clone https://github.com/spragginsdesigns/Gelateria-Del-Centro-WebApp.git
-    ```
-    
-2. Navigate to the project root directory:
-    
-    ```bash
-    cd Gelateria-Del-Centro-WebApp
-    ```
-    
-3. Install dependencies using the NodeJS package manager:
-    
-    ```bash
-    npm install
-    ```
-    
-4. Start the development server: The application will be available at `http://localhost:3000`.
-    
-    ```bash
-    npm start
-    ```
-
 ---
 
+# Getting Started
+
+You can quickly set up and run this project on your local machine by following the steps below.
+
+## Prerequisites
+
+Ensure you have the latest versions of [Node.js](https://nodejs.org/en/download/) (which includes npm) and [Git](https://git-scm.com/downloads).
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/spragginsdesigns/Gelateria-Del-Centro-WebApp.git
+   ```
+
+2. Change to the project directory:
+   ```bash
+   cd Gelateria-Del-Centro-WebApp
+   ```
+
+3. Checkout to the `events-section` branch to access the latest features:
+   ```bash
+   git checkout events-section
+   ```
+
+4. Install required dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running the Project
+
+1. Launch the development server:
+   ```bash
+   npm start
+   ```
+
+2. View the application in your web browser at `http://localhost:3000`.
+
+## Troubleshooting
+
+- To update Node.js, [re-download](https://nodejs.org/en/download/) it from the official website.
+- To update npm to the latest version:
+  ```bash
+  npm install -g npm@latest
+  ```
+
+  Update npm to get all dependecies to their latest versions:
+  ```bash
+  npm update
+  ```
+
+---
 ## Project Structure
 
 ### Navbar (Component):
