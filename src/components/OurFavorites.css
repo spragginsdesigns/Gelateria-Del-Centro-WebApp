@@ -1,74 +1,82 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+h2 {
+  color: green; /* Changes the font color */
+}
 /* Download Menu Button */
 
 .download-button {
-    background-color: #eb6368; /* Pink background */
-    border: none; /* Remove border */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer; /* Mouse pointer on hover */
-    border-radius: 20px; /* Rounded corners */
-    transition-duration: 0.4s; /* Transition */
-    margin-bottom: 5%;
+  background-color: #eb6368; /* Pink background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 20px; /* Rounded corners */
+  transition-duration: 0.4s; /* Transition */
+  margin-bottom: 5%;
 }
 
 .download-button:hover {
-    background-color: white; /* White background */
-    color: black; /* Black text */
+  background-color: white; /* White background */
+  color: black; /* Black text */
 }
 .favorites-container {
-    text-align: center;
-    color: #978431; /* Changes the font color */
-    font-family: Georgia, serif; /* Changes the font family */
+  text-align: center;
+  color: #000000; /* Changes the font color */
+  font-family: Georgia, serif; /* Changes the font family */
 }
+
+/* h1 green color */
 
 .favorites-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
 
-    @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr); /* Changes to 2 columns on larger screens */
-    }
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Changes to 2 columns on larger screens */
+  }
 
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr; /* Changes to 1 column on medium screens */
-    }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Changes to 1 column on medium screens */
+  }
 }
 
 .favorite-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    max-width: 300px;
-    transition: transform 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .favorite-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    max-width: 300px;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 12px; /* Add rounded corners to the cards */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px; /* Add rounded corners to the cards */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a drop shadow */
 }
 
 .favorite-card img {
-    width: 100%;
-    height: 200px; /* Set a specific height for the images */
-    object-fit: cover; /* Cover the whole area of the container */
-    border-radius: 12px; /* Add rounded corners to the images */
+  width: 100%;
+  height: 200px; /* Set a specific height for the images */
+  object-fit: cover; /* Cover the whole area of the container */
+  border-radius: 12px; /* Add rounded corners to the images */
 }
 .favorite-card:hover {
-    transform: scale(1.05); /* Scales the card up slightly */
+  transform: scale(1.05); /* Scales the card up slightly */
 }
