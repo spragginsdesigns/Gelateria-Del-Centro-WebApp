@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
 import './events.css';
 import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const Events = () => {
     const [startDate, setStartDate] = useState(new Date());
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const data = new FormData(form);
+        const name = data.get('name');
+        const email = data.get('email');
+        const date = data.get('date');
+        const message = data.get('message');
+        console.log(name, email, date, message);
+    }
     return (
         <>
             <div className="title">
@@ -26,20 +37,25 @@ const Events = () => {
                     </section>
                     <section className="inquiry-form" style={{ gridArea: 'inquiry' }}>
                         <h2>Inquiry Form</h2>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <label>
-                                Name:
+                                <span>Name:</span>
                                 <input type="text" name="name" />
                             </label>
                             <label>
-                                Email:
+                                <span>Email:</span>
                                 <input type="email" name="email" />
                             </label>
                             <label>
-                                Date:
-                                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
+                                <span>Date:</span>
+                                <DatePicker name="date" selected={startDate} onChange={date => setStartDate(date)} />
                             </label>
-                            {/* Add the rest of your form fields here */}
+                            {/* Label for a message with a limit of 1000 characters */}
+                            <label>
+                                <span>Message:</span>
+                                <textarea name="message" maxLength="1000" />
+                            </label>
+                            <button type="submit" className="submit-button">Submit</button>
                         </form>
                     </section>
                 </div>

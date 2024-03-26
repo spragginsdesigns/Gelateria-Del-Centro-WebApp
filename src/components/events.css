@@ -44,7 +44,13 @@ body {
 }
 
 .inquiry-form form label {
-  margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.inquiry-form form label span {
+  width: 100px; /* Adjust this value as needed */
+  margin-right: 10px;
 }
 
 .inquiry-form form input,
@@ -52,4 +58,22 @@ body {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  margin-top: 5px; /* Add this line to add space between the label and the input field */
+}
+
+/* Button Style CSS */
+.submit-button {
+  background-color: #eb6368; /* Pink background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 20px; /* Rounded corners */
+  transition-duration: 0.4s; /* Transition */
+  margin-bottom: 5%;
 }
