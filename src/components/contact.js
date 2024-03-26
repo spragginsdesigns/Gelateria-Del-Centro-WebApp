@@ -182,9 +182,10 @@ const Contact = () => {
         }
 
         setLoading(true);
-
+        // TODO redact this information before publishing. 
         emailjs.send('service_fj7dt93', 'template_azx9qwb', formData, 'CLQoNfQmZ3BsycBFw')
             .then((response) => {
+                // TODO remove console.log prior to publishing. 
                 console.log('SUCCESS!', response.status, response.text);
                 setLoading(false);
             }, (error) => {
@@ -192,7 +193,7 @@ const Contact = () => {
                 setLoading(false);
             });
     };
-
+    j
     return (
         <div className="contact-container">
             <h1>Contact Us</h1>
