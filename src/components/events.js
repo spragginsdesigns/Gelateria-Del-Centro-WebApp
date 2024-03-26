@@ -1,8 +1,10 @@
-// Events.js
-import React from 'react';
+import React, { useState } from 'react';
 import './events.css';
+import DatePicker from 'react-datepicker';
 
 const Events = () => {
+    const [startDate, setStartDate] = useState(new Date());
+
     return (
         <>
             <div className="title">
@@ -32,6 +34,10 @@ const Events = () => {
                             <label>
                                 Email:
                                 <input type="email" name="email" />
+                            </label>
+                            <label>
+                                Date:
+                                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
                             </label>
                             {/* Add the rest of your form fields here */}
                         </form>
