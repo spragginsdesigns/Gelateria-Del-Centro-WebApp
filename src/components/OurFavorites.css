@@ -3,10 +3,6 @@ body {
   padding: 0;
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
-h2 {
-  color: green; /* Changes the font color */
-}
 /* Download Menu Button */
 
 .download-button {
@@ -60,15 +56,12 @@ h2 {
   padding: 20px;
   max-width: 300px;
   transition: transform 0.3s ease-in-out;
-}
-
-.favorite-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  max-width: 300px;
-  transition: transform 0.3s ease-in-out;
   border-radius: 12px; /* Add rounded corners to the cards */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+}
+
+.favorite-card h2 {
+  color: #4caf50; /* Green */
 }
 
 .favorite-card img {
