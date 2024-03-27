@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <Router basename="/Gelateria-Del-Centro-WebApp">
+    <Router>
       <div className="App">
         <Navbar toggleModal={toggleModal} />
         <OnlineOrderingModal isOpen={isModalOpen} toggleModal={toggleModal} />
