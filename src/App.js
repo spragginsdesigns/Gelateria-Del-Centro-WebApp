@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/Gelateria-Del-Centro-WebApp">
       <div className="App">
         <Navbar toggleModal={toggleModal} />
         <OnlineOrderingModal isOpen={isModalOpen} toggleModal={toggleModal} />

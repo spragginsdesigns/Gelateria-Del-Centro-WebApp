@@ -4,6 +4,7 @@ import About from './about';
 import OurFavoritesMenu from './OurFavorites';
 import OurSpecials from './OurSpecials';
 import Contact from './contact';
+import Footer from './footer';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <OurFavoritesMenu />
             <OurSpecials />
             <Contact />
+            <Footer />
         </>
     );
 };
