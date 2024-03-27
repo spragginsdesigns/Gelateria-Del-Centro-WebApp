@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "./footer.css";
+import { Link } from 'react-router-dom';
+
 
 const FooterContainer = styled.div`
     width: 100%;
@@ -32,7 +34,7 @@ const FooterLinksContainer = styled.div`
   }
 `;
 
-const FooterLink = styled.a`
+const FooterLink = styled(Link)`
   color: black;
   text-decoration: none;
   margin: 0 10px;
@@ -76,12 +78,13 @@ const Footer = () => {
                 </SocialMediaLinks>
             </div>
             <FooterLinksContainer>
-                <FooterLink href="/our-story">Our Story</FooterLink>
-                <FooterLink href="/menu">Menu</FooterLink>
-                <FooterLink href="/contact">Contact</FooterLink>
+                <FooterLink to="/">Our Story</FooterLink>
+                <FooterLink to="/menu">Menu</FooterLink>
+                <FooterLink to="/contact">Contact</FooterLink>
             </FooterLinksContainer>
         </FooterContainer>
     );
 };
+
 
 export default Footer;

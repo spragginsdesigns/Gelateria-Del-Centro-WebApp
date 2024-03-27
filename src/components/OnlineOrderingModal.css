@@ -1,121 +1,152 @@
 .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 .modal-content {
-    background: rgb(184, 68, 68);
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
+  background: rgb(184, 68, 68);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* GrubHub, DoorDash, Square & Uber Eats Logos */
 .service-logo {
-    width: 150px; /* Increase size */
-    height: auto;
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.7)); /* Increase drop shadow */
-    background-color: rgba(255, 255, 255, 0.3); /* Add semi-transparent background color */
-    border-radius: 10px; /* Add border radius to make the background color rounded */
-    padding: 10px; /* Add some padding to create space between the logo and the background color */
+  width: 150px; /* Increase size */
+  height: auto;
+  filter: drop-shadow(
+    0px 0px 20px rgba(0, 0, 0, 0.7)
+  ); /* Increase drop shadow */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Add semi-transparent background color */
+  border-radius: 10px; /* Add border radius to make the background color rounded */
+  padding: 10px; /* Add some padding to create space between the logo and the background color */
 }
 
 .service-card {
-    color: white;
-    width: 45%; /* Adjust as needed */
-    margin-bottom: 15px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add drop shadow */
-    transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+  color: white;
+  width: 45%; /* Adjust as needed */
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+  transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
 }
 
 .service-card:hover {
-    transform: scale(1.05); /* Add scale effect on hover */
+  transform: scale(1.05); /* Add scale effect on hover */
 }
 
 /* Square Button Styles */
 .service-card.square .order-button {
-    background-color: #3E4348;
-    /* Square's brand color */
-    color: #ffffff;
-    /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
+  background-color: #3e4348;
+  /* Square's brand color */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /* DoorDash Button Styles */
 .service-card.doordash .order-button {
-    background-color: #FF3008;
-    /* DoorDash's brand color */
-    color: #ffffff;
-    /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
+  background-color: #ff3008;
+  /* DoorDash's brand color */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /* Uber Eats Button Styles */
 .service-card.ubereats .order-button {
-    background-color: #06C167;
-    /* Uber Eats's brand color */
-    color: #ffffff;
-    /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
+  background-color: #06c167;
+  /* Uber Eats's brand color */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* GrubHub Button Styles */
+.service-card.grubhub .order-button {
+  background-color: #ff5500; /* GrubHub's brand color */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .modal-content {
-    color: white;
-    background-image: url('../assets/warnors-image-1.jpg');
-    background-color: rgba(88, 101, 101, 0.7); /* More transparent background */
-    background-blend-mode: multiply;
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-size: cover; /* Make the image cover the entire element */
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
+  color: white;
+  background-image: url("../assets/warnors-image-1.jpg");
+  background-color: rgba(88, 101, 101, 0.7); /* More transparent background */
+  background-blend-mode: multiply;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Make the image cover the entire element */
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
 }
 
 /* Additional individual service card styles go here */
 
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background: #ff5f5f;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: #ff5f5f;
+  color: white;
+  border-radius: 5px; /* Make the button corners slightly rounded */
+  height: 40px; /* Set a fixed height */
+  padding: 0 20px; /* Add horizontal padding */
+  display: flex; /* Use flexbox to center the text */
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  font-size: 18px; /* Increase the font size */
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.3s ease 0s; /* Add a transition for a smooth hover effect */
+}
+
+.close-btn:hover {
+  background-color: #ff1f1f; /* Make the button darker when hovered */
+  box-shadow: 0px 15px 20px rgba(2, 2, 2, 0.2); /* Increase the shadow when hovered */
 }

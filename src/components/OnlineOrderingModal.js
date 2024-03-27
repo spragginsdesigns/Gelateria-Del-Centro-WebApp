@@ -60,23 +60,13 @@ const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
                         {/* <h3>Grubhub</h3> */}
                         <img className="service-logo" src={GrubHubLogo} alt="Grubhub" />
                         <p>Order through Grubhub for delivery.</p>
-                        <div
-                            className="gh-button-ifrm"
-                            data-customer-id="7919504"
-                            data-restaurant-name="Gelateria Del Centro"
-                            data-button-color="#FF8000:#ffffff"
-                            data-button-size="large"
-                            data-env="prod"
-                            data-shortlinkurl="http://menus.fyi/7919504"
-                            data-restaurant-address="2017 Tuolumne St, Fresno CA, 93721"
-                            data-version="1.0"
-                            data-link-type="gh"
-                            data-target="_self"
-                        ></div>
+                        <a href="https://www.grubhub.com/restaurant/gelateria-del-centro-2017-tuolumne-st-fresno/7919504" target="_blank" rel="noopener noreferrer">
+                            <button className="order-button">Order Online</button> {/* Styled Button */}
+                        </a>
                     </div>
                 </div>
-                <button className="close-btn" onClick={toggleModal}>Close</button>
             </div>
+            <button className="close-btn" onClick={toggleModal}>Close</button>
         </div>
     );
 };
