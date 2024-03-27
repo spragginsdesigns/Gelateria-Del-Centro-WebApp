@@ -80,6 +80,17 @@
     <meta property="og:site_name" content="Gelateria Del Centro" />
     <meta property="fb:admins" content="246686211868035" />
 
+    <!-- Script for Reach Routing to redirect to index.html -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
     <!-- Structure Data JSON-LD Data -->
 
     <script type="application/ld+json">
