@@ -2,7 +2,7 @@
   "name": "gelateria-del-centro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pplmade.com/gelateria",
+  "homepage": "https://pplmade.com",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
