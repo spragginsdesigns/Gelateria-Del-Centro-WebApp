@@ -1,0 +1,23 @@
+# https://www.robotstxt.org/robotstxt.html
+# Allowing all user agents to access public content
+User-agent: *
+Allow: /public/
+
+# Disallowing access to raw source files and components
+Disallow: /src/
+Disallow: /node_modules/
+
+# Disallowing access to development and configuration files
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /*.test.js
+Disallow: /*.test.jsx
+
+# Specifying the location of the sitemap for better indexing
+Sitemap: https://www.gelateriadelcentrofresno.com/public/sitemap.xml
+
+# Additional rules for specific user agents can be placed here
+# For example, if you want to disallow a specific crawler from a section of the site:
+# User-agent: SpecificUserAgent
+# Disallow: /some-specific-section/
+
