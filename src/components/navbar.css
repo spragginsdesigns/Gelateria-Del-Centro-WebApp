@@ -1,35 +1,6 @@
 @import url("slick-carousel/slick/slick.css");
 @import url("slick-carousel/slick/slick-theme.css");
 
-/* Monterio font */
-@font-face {
-  font-family: "Monterio";
-  src: url("/fonts/MonterioRegular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monterio";
-  src: url("/fonts/MonterioBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monterio";
-  src: url("/fonts/MonterioLight.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monterio";
-  src: url("/fonts/MonterioSemibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   padding: 0;

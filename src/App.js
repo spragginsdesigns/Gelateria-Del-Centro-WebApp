@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import OnlineOrderingModal from './components/OnlineOrderingModal';
 import Menu from './components/menu';
 import Events from './components/events';
+import './App.css';
 import './components/navbar.css';
 import './components/HeroCarousel.css';
 import './components/OurFavorites.css';

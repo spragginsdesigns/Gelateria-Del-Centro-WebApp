@@ -1,67 +1,28 @@
 /* Monterio font */
 @font-face {
   font-family: "Monterio";
-  src: url("/fonts/MonterioRegular.ttf") format("truetype");
+  src: url("../assets/fonts/MonterioRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monterio";
-  src: url("/fonts/MonterioBold.ttf") format("truetype");
+  src: url("../assets/fonts/MonterioBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monterio";
-  src: url("/fonts/MonterioLight.ttf") format("truetype");
+  src: url("../assets/fonts/MonterioLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monterio";
-  src: url("/fonts/MonterioSemibold.ttf") format("truetype");
+  src: url("../assets/fonts/MonterioSemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
