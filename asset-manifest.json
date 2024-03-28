@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.98d023b3.css",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.d1d0a132.css",
     "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.12e6aeda.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/rosa-rafael-Nag3E3yzygU-unsplash.jpg": "/Gelateria-Del-Centro-WebApp/static/media/rosa-rafael-Nag3E3yzygU-unsplash.6b4b7290378bf8d67f16.jpg",
@@ -23,6 +23,10 @@
     "static/media/Stracchiatella-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Stracchiatella-web.f8ad585b3d7546526fc8.jpg",
     "static/media/Chocolate_Strawberry-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Chocolate_Strawberry-web.39291e686dd175399bcc.jpg",
     "static/media/Gelateria Del Centro STAMP.png": "/Gelateria-Del-Centro-WebApp/static/media/Gelateria Del Centro STAMP.a640dd77bf9ef8b996c7.png",
+    "static/media/MonterioLight.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioLight.c79bae9efc447b3b4465.ttf",
+    "static/media/MonterioBold.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioBold.13a46640b2988b6d2e0d.ttf",
+    "static/media/MonterioRegular.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioRegular.02e230443d267b5e19ae.ttf",
+    "static/media/MonterioSemibold.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioSemibold.4226b10273e327175ade.ttf",
     "static/media/scalloped-border.svg": "/Gelateria-Del-Centro-WebApp/static/media/scalloped-border.8f5960f5a476962db1a9.svg",
     "index.html": "/Gelateria-Del-Centro-WebApp/index.html",
     "static/media/doordashlogo.svg": "/Gelateria-Del-Centro-WebApp/static/media/doordashlogo.dbb3d44105e7d0b25fcafb874ba7a5eb.svg",
@@ -33,12 +37,12 @@
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/uber-eats-logos-idT_4VNf_n.svg": "/Gelateria-Del-Centro-WebApp/static/media/uber-eats-logos-idT_4VNf_n.8b969d35d373b512664b78f912f19abc.svg",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.98d023b3.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.98d023b3.css.map",
+    "main.d1d0a132.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.d1d0a132.css.map",
     "main.12e6aeda.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.12e6aeda.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d023b3.css",
+    "static/css/main.d1d0a132.css",
     "static/js/main.12e6aeda.js"
   ]
 }
