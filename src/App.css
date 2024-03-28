@@ -1,28 +1,28 @@
 /* Monterio font */
 @font-face {
   font-family: "Monterio";
-  src: url("../assets/fonts/MonterioRegular.ttf") format("truetype");
+  src: url("../public/fonts/MonterioRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monterio";
-  src: url("../assets/fonts/MonterioBold.ttf") format("truetype");
+  src: url("../public/fonts/MonterioBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monterio";
-  src: url("../assets/fonts/MonterioLight.ttf") format("truetype");
+  src: url("../public/fonts/MonterioLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monterio";
-  src: url("../assets/fonts/MonterioSemibold.ttf") format("truetype");
+  src: url("../public/fonts/MonterioSemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }

@@ -1,8 +1,5 @@
 /* CSS for HeroCarousel */
 
-/* Import font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
 /* Carousel heading styles */
 /* TODO 1: Change to a h1 or <p> tag for Gelateria Del Centro Title Styling. */
 .carousel-heading {

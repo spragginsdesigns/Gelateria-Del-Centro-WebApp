@@ -31,19 +31,19 @@ function HeroCarousel() {
             </h1>
             <Slider {...settings}>
                 <div>
-                    <img src={menuImage1} alt="Menu Item 1" />
+                    <img src={menuImage1} alt="Exterior shot of Gelateria Del Centro in Fresno, CA. The image shows the front door with the shop's logo and a welcoming entrance." />
                 </div>
                 <div>
-                    <img src={menuImage2} alt="Menu Item 2" />
+                    <img src={menuImage2} alt="Exterior shot of Gelateria Del Centro in Fresno, CA. A happy customer is seen enjoying a scoop of Italian Gelato outside the shop on a sunny day." />
                 </div>
                 <div>
-                    <img src={menuImage3} alt="Menu Item 3" />
+                    <img src={menuImage3} alt="Exterior shot of Gelateria Del Centro in Fresno, CA during its grand opening in November 2023. The shop is decorated with balloons and a crowd is gathered outside." />
                 </div>
                 <div>
-                    <img src={menuImage4} alt="Menu Item 4" />
+                    <img src={menuImage4} alt="Close-up shot of Gelateria Del Centro's amazing gelato ice cream. The image shows a variety of colorful gelato flavors in the display case." />
                 </div>
                 <div>
-                    <img src={menuImage5} alt="Menu Item 5" />
+                    <img src={menuImage5} alt="Gelateria Del Centro grand opening at Warnors Theatre in Downtown Fresno, California. The image shows a crowd of people celebrating the event." />
                 </div>
             </Slider>
         </div>
