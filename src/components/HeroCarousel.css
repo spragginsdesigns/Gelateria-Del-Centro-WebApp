@@ -3,6 +3,35 @@
 /* Import font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+/* Monterio font */
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioSemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Carousel heading styles */
 /* TODO 1: Change to a h1 or <p> tag for Gelateria Del Centro Title Styling. */
 .carousel-heading {

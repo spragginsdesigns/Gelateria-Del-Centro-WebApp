@@ -1,89 +1,123 @@
+/* Monterio font */
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterio";
+  src: url("/fonts/MonterioSemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .contact-container {
-    text-align: center;
-    color: #978431;
-    font-family: Georgia, serif;
+  text-align: center;
+  color: #978431;
+  font-family: Georgia, serif;
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin: auto; /* Centers the grid */
-    width: 90%; /* Adjust this value as needed */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: auto; /* Centers the grid */
+  width: 90%; /* Adjust this value as needed */
 }
 
 @media (max-width: 412px) {
-    .contact-grid {
-        grid-template-columns: 1fr; /* Makes the grid have 1 column on small screens */
-    }
+  .contact-grid {
+    grid-template-columns: 1fr; /* Makes the grid have 1 column on small screens */
+  }
 }
 
 .map iframe {
-    width: 100%; /* Makes the iframe take up the full width of its container */
-    height: 100%;
+  width: 100%; /* Makes the iframe take up the full width of its container */
+  height: 100%;
 }
 
 .form {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
-.form input, .form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
 }
 
 .form button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 
 /* Animation in CSS for progress bar on Send Button */
 @keyframes loading {
-    0% {
-        background-position: 0% 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .Button {
-    /* ... (rest of your button styles) */
+  /* ... (rest of your button styles) */
 
-    &.loading {
-        position: relative;
-        overflow: hidden;
+  &.loading {
+    position: relative;
+    overflow: hidden;
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
-            transform: translateX(-100%);
-            animation: loading 2s infinite;
-        }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+      );
+      transform: translateX(-100%);
+      animation: loading 2s infinite;
     }
+  }
 }
