@@ -17,9 +17,25 @@ function HeroCarousel() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 3, // Default to 3 slides for large screens
         slidesToScroll: 3,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024, // Tablet and below
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 600, // Mobile and below
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
 
     return (
@@ -31,19 +47,19 @@ function HeroCarousel() {
             </h1>
             <Slider {...settings}>
                 <div>
-                    <img src={menuImage1} alt="Exterior shot of Gelateria Del Centro in Fresno, CA. The image shows the front door with the shop's logo and a welcoming entrance." />
+                    <img src={menuImage1} alt="Exterior of Gelateria Del Centro in Fresno, CA showing the front door with the shop's logo and a welcoming entrance." />
                 </div>
                 <div>
-                    <img src={menuImage2} alt="Exterior shot of Gelateria Del Centro in Fresno, CA. A happy customer is seen enjoying a scoop of Italian Gelato outside the shop on a sunny day." />
+                    <img src={menuImage2} alt="Exterior of Gelateria Del Centro in Fresno, CA. A happy customer is seen enjoying a scoop of Italian Gelato outside the shop on a sunny day." />
                 </div>
                 <div>
-                    <img src={menuImage3} alt="Exterior shot of Gelateria Del Centro in Fresno, CA during its grand opening in November 2023. The shop is decorated with balloons and a crowd is gathered outside." />
+                    <img src={menuImage3} alt="Exterior of Gelateria Del Centro in Fresno, CA during its grand opening in November 2023. The shop is decorated with balloons and a crowd is gathered outside." />
                 </div>
                 <div>
-                    <img src={menuImage4} alt="Close-up shot of Gelateria Del Centro's amazing gelato ice cream. The image shows a variety of colorful gelato flavors in the display case." />
+                    <img src={menuImage4} alt="Close-up of Gelateria Del Centro's amazing gelato ice cream showing a variety of colorful gelato flavors in the display case." />
                 </div>
                 <div>
-                    <img src={menuImage5} alt="Gelateria Del Centro grand opening at Warnors Theatre in Downtown Fresno, California. The image shows a crowd of people celebrating the event." />
+                    <img src={menuImage5} alt="Gelateria Del Centro grand opening at Warnors Theatre in Downtown Fresno, California showing a crowd of people celebrating the event." />
                 </div>
             </Slider>
         </div>

@@ -9,7 +9,7 @@
   max-width: 1200px; /* Adjust as needed */
   padding-top: 80px;
   color: #000000; /* Changes the font color */
-  font-family: Georgia, serif; /* Changes the font family */
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 .description {
@@ -62,6 +62,7 @@
   transition-duration: 0.4s;
   /* Transition */
   margin-bottom: 5%;
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 .learnMore-button:hover {
@@ -118,7 +119,7 @@ hr {
   top: 0; /* Aligns the sidebar with the top of the viewport */
   color: #000000;
   /* Changes the font color */
-  font-family: Georgia, serif;
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   /* Changes the font family */
 }
 

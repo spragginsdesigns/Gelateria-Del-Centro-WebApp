@@ -26,3 +26,11 @@
   font-weight: 600;
   font-style: normal;
 }
+
+/* Global Styles for buttons, input fields, select and textareas in Roboto font with Segoe UI and others as backups */
+button,
+input,
+select,
+textarea {
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+}

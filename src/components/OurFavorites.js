@@ -51,7 +51,7 @@ const OurFavorites = () => {
         <div className="favorites-container">
             <h1>Our Favorites</h1>
             <p>Always available, Always Delicious</p>
-            <a href="/GDC-Menu.pdf" download>
+            <a href={process.env.PUBLIC_URL + "/GDC-Menu.pdf"} download>
                 <button className="download-button">Download Menu</button>
             </a>
             <div className="favorites-grid">

@@ -1,10 +1,9 @@
 /* CSS for HeroCarousel */
 
 /* Carousel heading styles */
-/* TODO 1: Change to a h1 or <p> tag for Gelateria Del Centro Title Styling. */
 .carousel-heading {
   font-family: "Monterio", sans-serif;
-  font-size: 5.5vw; /* Relative to the viewport width */
+  font-size: 3.5rem; /* Fixed font size for larger screens */
   text-align: center;
   color: #333;
   margin-bottom: 20px;
@@ -104,14 +103,22 @@
   box-sizing: border-box; /* Include the border in the element's total width and height */
   overflow: hidden;
   border-radius: 0;
+  padding: 10px; /* Add padding around images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Rounded corners for slides */
+}
+
+.slick-slide:hover {
+  transform: scale(1.03); /* Slightly enlarge slides on hover */
+  transition: transform 0.3s ease-in-out;
 }
 
 .slick-slide img {
   display: block;
-  width: 100%; /* Set the width to 100% of the container */
-  height: 100%; /* Set the height to 100% of the container */
-  object-fit: cover; /* Cover the whole area of the container */
-  object-position: center; /* Center the image within the container */
+  width: 100%;
+  max-height: 500px; /* Limit image height */
+  object-fit: cover;
+  object-position: center;
 }
 
 .slick-slide.slick-loading img {
@@ -137,4 +144,30 @@
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .carousel-heading {
+    font-size: 2.5rem; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-heading {
+    font-size: 1.8rem; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-slide img {
+    max-height: 400px; /* Smaller height for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slide img {
+    max-height: 300px; /* Smaller height for mobile screens */
+  }
 }

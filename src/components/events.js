@@ -18,7 +18,7 @@ const Events = () => {
     }
     return (
         <>
-            <div className="title">
+            <div id="private-events" className="title">
                 <h1>Private Events</h1>
             </div>
             <div className="events-container">

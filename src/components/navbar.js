@@ -1,51 +1,61 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Logo from '../assets/Gelateria Del Centro STAMP.png'; // Ensure the path is correct
 import './navbar.css';
-import { Link, useLocation } from 'react-router-dom';
-import { HiHome } from 'react-icons/hi'; // Import HomeIcon
 
 const OrderButton = styled.button`
-    background-color: #ff6347; // Tomato color
+    background-color: #ff6347;
     color: white;
+    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    margin-top: 30px;
-    margin-right: 140px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: auto; /* This will push the button to the right side of its container */
 
     &:hover {
-        background-color: #ff4500; // Orangered color
+        background-color: #ff4500;
     }
 
     @media (max-width: 415px) {
-        font-size: 14px; /* Decrease font size for smaller screens */
-        margin-left: auto; /* Push the button to the right */
-        margin-right: 0; /* Remove right margin for smaller screens */
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        position: static; /* Adjusted to ensure it doesn't overlap on mobile */
+        margin: 10px 0; /* Added margin for spacing on mobile */
     }
 `;
 
 const Navbar = ({ toggleModal }) => {
-    const location = useLocation();
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
-        <div className="navbar-container">
-            <nav className="navbar">
-                <div className="navbar-item">
-                    {location.pathname !== "/" && (
-                        <Link to="/">
-                            <HiHome size={35} style={{ color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} />
-                        </Link>
+        <nav className="NavbarContainer">
+            <div className="navbar">
+                <div className="navbar-left">
+                    <Link to="/" className="navbar-logo">
+                        <img src={Logo} alt="Gelateria Del Centro Logo" />
+                    </Link>
+                    {!isMobile && (
+                        <p className="navbar-address">2017 Tuolumne St Fresno, CA 93721</p>
                     )}
-                    <p>2017 Tuolumne St Fresno, CA 93721</p>
                 </div>
-                <OrderButton className="navbar-item order-now" onClick={toggleModal}>
-                    ORDER NOW
-                </OrderButton>
-            </nav>
-        </div>
+                <div className="order-now">
+                    <OrderButton onClick={toggleModal}>Order Now</OrderButton>
+                </div>
+            </div>
+        </nav>
     );
-}
+};
 
 export default Navbar;

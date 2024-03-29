@@ -6,120 +6,80 @@ body {
   padding: 0;
 }
 
-.navbar-container {
-  /* Make the navbar stickied to the top */
-  /* position: sticky;
-  top: 0;
-  z-index: 100; */
-  background-image: url("../assets/scalloped-border.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-  /* Adjust the image size to contain within the navbar */
-  min-height: 177px;
-  font-size: 3.2vw;
-  font-family: "Monterio", sans-serif;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* Spacing between items */
   align-items: center;
-  /* Vertical center alignment */
-  color: white;
-  padding: 0 20px;
-  /* Horizontal padding; remove vertical padding */
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  /* Center the navbar */
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='16' viewBox='0 0 84 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M78 7V4h-2v3h-3v2h3v3h2V9h3V7h-3zM30 7V4h-2v3h-3v2h3v3h2V9h3V7h-3zM10 0h2v16h-2V0zm6 0h4v16h-4V0zM2 0h4v16H2V0zm50 0h2v16h-2V0zM38 0h2v16h-2V0zm28 0h2v16h-2V0zm-8 0h6v16h-6V0zM42 0h6v16h-6V0z' fill='%23ffa5b2' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  border-radius: 8px; /* This will add a border radius to the navbar */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* This will add a slight drop shadow to the navbar */
+  position: sticky; /* This will make the navbar sticky */
+  top: 0; /* This will stick the navbar to the top of the page */
 }
 
-.navbar-item {
-  display: flex;
-  align-items: center;
+.navbar-logo {
+  display: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); /* Adds a drop shadow effect to the logo */
 }
 
-.navbar-item a {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  margin-bottom: 40px;
-}
+@media (max-width: 768px) {
+  .navbar-logo {
+    display: block;
+  }
 
-.navbar-item p {
-  margin: 0;
-  font-size: 3.1rem;
-  line-height: 3.1rem; /* Add this line */
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 415px) {
-  .navbar-item p {
-    font-size: 1.5rem;
-    /* Decrease font size for smaller screens */
+  .navbar-logo img {
+    width: 60px; /* Adjust this to change the width of the logo on mobile screens */
+    height: auto; /* This will maintain the aspect ratio of the logo */
   }
 }
 
-.order-now {
-  background-color: #eb6368;
-  /* Pink background */
-  border: none;
-  /* Remove border */
-  color: white;
-  /* White text */
-  padding: 15px 32px;
-  /* Some padding */
-  text-align: center;
-  /* Centered text */
-  text-decoration: none;
-  /* Remove underline */
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  /* Mouse pointer on hover */
-  border-radius: 20px;
-  /* Rounded corners */
-  transition-duration: 0.4s;
-  /* Transition */
-  margin-bottom: 5%;
-  z-index: 2;
-}
-
-.order-now:hover {
-  background-color: white;
-  /* White background */
+.navbar-address {
+  display: flex;
+  flex-direction: row; /* Keep address next to logo */
+  align-items: center;
+  gap: 20px; /* Space between logo and address */
+  font-size: 3rem; /* Adjust as needed */
+  font-family: Monterio, sans-serif; /* Adjust as needed */
+  font-weight: bold;
   color: black;
-  /* Black text */
 }
 
-* {
-  box-sizing: border-box;
-  /* Include padding and border in the element's total width and height */
-}
-
-@media (max-width: 415px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    /* Align items to the left and right */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row; /* Adjust layout for smaller screens */
     padding: 10px;
+    height: 50px;
+  }
+
+  .navbar-address {
+    display: none; /* Optionally hide the address on smaller screens */
   }
 
   .order-now {
-    transform: scale(0.8);
-    /* Reduce the size of the button */
-    margin-left: auto;
-    /* Push the button to the right */
-    margin-top: 0;
-    /* Align the button to the top */
-    margin-right: 0;
-    /* Remove right margin for smaller screens */
+    padding: 8px 16px; /* Slightly smaller padding */
+  }
+
+  .navbar-Logo {
+    display: block; /* Show the logo on smaller screens */
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar-container {
+    justify-content: space-between; /* Align items to the start and end of the container */
+  }
+
+  .logo,
+  .order-now {
+    flex-basis: auto; /* Each takes the space it needs */
+    text-align: center; /* Center align the logo */
+    margin-bottom: 10px; /* Space between logo and button */
+  }
+
+  .order-now {
+    order: 2; /* Order now button goes below */
+    margin-left: auto; /* Push the button to the right */
   }
 }

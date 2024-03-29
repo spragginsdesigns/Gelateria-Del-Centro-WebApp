@@ -9,7 +9,7 @@ const Input = styled.input`
   border: none;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px; /* Adjust this value as needed */
-  font-family: Georgia, serif;
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 `;
 
@@ -19,7 +19,7 @@ const TextArea = styled.textarea`
   border: none;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px; /* Adjust this value as needed */
-  font-family: Georgia, serif;
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   color: #898900;
   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 `;
@@ -30,7 +30,7 @@ const Button = styled.button`
   border: none;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  font-family: Georgia, serif;
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   color: #fff;
   background: #ffa5b2; /* Makes the button Soft Pink */
   transition: all 0.3s ease-in-out; /* Adds a transition effect */
@@ -46,7 +46,7 @@ const Button = styled.button`
 `;
 
 const Sweet = styled.span`
-  font-family: "Georgia-Italic";
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   color: #f2ccb2; /* Change the color of the text */
   font-size: 2em; /* Change the font size */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a text shadow */
