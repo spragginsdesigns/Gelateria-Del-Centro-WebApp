@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.1383b6e7.css",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.429cfbe9.css",
     "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.d7df3600.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/rosa-rafael-Nag3E3yzygU-unsplash.jpg": "/Gelateria-Del-Centro-WebApp/static/media/rosa-rafael-Nag3E3yzygU-unsplash.6b4b7290378bf8d67f16.jpg",
@@ -39,6 +39,7 @@
     "static/media/Sofia Pro Light Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Light Az.05d31297ef63fd9a57db.woff",
     "static/media/Sofia Pro UltraLight Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro UltraLight Az.a7dc94fbdb3e3dba65a9.woff",
     "static/media/Sofia Pro Bold Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Bold Italic Az.86177a6bc0e9e30dcae7.woff",
+    "static/media/GDC-Blunt-Regular.otf": "/Gelateria-Del-Centro-WebApp/static/media/GDC-Blunt-Regular.21f9c6f53780fcacc270.otf",
     "static/media/scallop-green.png": "/Gelateria-Del-Centro-WebApp/static/media/scallop-green.c6bfb0c9a35eb71cd30a.png",
     "index.html": "/Gelateria-Del-Centro-WebApp/index.html",
     "static/media/doordashlogo.svg": "/Gelateria-Del-Centro-WebApp/static/media/doordashlogo.dbb3d44105e7d0b25fcafb874ba7a5eb.svg",
@@ -49,12 +50,12 @@
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/uber-eats-logos-idT_4VNf_n.svg": "/Gelateria-Del-Centro-WebApp/static/media/uber-eats-logos-idT_4VNf_n.8b969d35d373b512664b78f912f19abc.svg",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.1383b6e7.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.1383b6e7.css.map",
+    "main.429cfbe9.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.429cfbe9.css.map",
     "main.d7df3600.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.d7df3600.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1383b6e7.css",
+    "static/css/main.429cfbe9.css",
     "static/js/main.d7df3600.js"
   ]
 }
