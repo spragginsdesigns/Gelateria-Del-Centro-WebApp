@@ -27,6 +27,12 @@
   font-style: normal;
 }
 
+/* Gelateria Del Centro Brand Typeface Font */
+
+@font-face {
+  font-family: "GDC-Blunt-Regular";
+  src: url("../public//fonts/GDC-Blunt-Regular.otf") format("opentype");
+}
 /* Font for everything else */
 @font-face {
   font-family: "Sofia Pro Regular";

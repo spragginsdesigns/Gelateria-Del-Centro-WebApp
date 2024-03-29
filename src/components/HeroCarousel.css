@@ -1,173 +1,74 @@
-/* CSS for HeroCarousel */
-
-/* Carousel heading styles */
-.carousel-heading {
-  font-family: "Monterio", sans-serif;
-  font-size: 3.5rem; /* Fixed font size for larger screens */
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #ffa5b2, #f2ccb2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.carousel-heading .text-large {
-  font-size: 1.3em; /* Relative to the font-size of .carousel-heading */
-  font-weight: bold;
-}
-
-.carousel-heading .text-small {
-  font-size: 1em; /* Relative to the font-size of .carousel-heading */
-  font-weight: normal;
-}
-
-/* Slick slider styles */
-.slick-slider {
+.heroCarousel-container {
   position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-  margin-top: 50px;
+  max-width: 100%;
+  margin-top: 6rem; /* Added space between the navbar and carousel */
 }
 
-/* Slick list styles */
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-/* Slick track styles */
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: "";
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-/* Slick slide styles */
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */ /* Commented out to remove drop shadow */
-  /* border-right: 1px solid pink; */ /* Commented out to remove divider */
-  box-sizing: border-box; /* Include the border in the element's total width and height */
-  overflow: hidden;
-  border-radius: 0;
-  padding: 10px; /* Add padding around images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px; /* Rounded corners for slides */
-}
-
-.slick-slide:hover {
-  transform: scale(1.03); /* Slightly enlarge slides on hover */
-  transition: transform 0.3s ease-in-out;
-}
-
-.slick-slide img {
-  display: block;
+.heroCarousel-title {
+  position: absolute;
   width: 100%;
-  max-height: 500px; /* Limit image height */
-  object-fit: cover;
-  object-position: center;
+  top: -15%; /* Adjust this to control the vertical positioning on desktop */
+  left: 0;
+  font-family: "Monterio", sans-serif; /* Use the custom font for the title */
+  font-size: 12rem; /* Large font size for the title on desktop */
+  font-weight: bold; /* Bold font weight for the title */
+  color: #f7b3a2; /* Color of the title */
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  padding: 0.1rem 0.1rem; /* Padding around the text */
+  text-align: center; /* Centers the text horizontally */
+  margin: 0; /* Remove default margin */
+  z-index: 2; /* Ensure the title is above the image */
 }
 
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
+.heroCarousel-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
   display: block;
 }
 
-.slick-loading .slick-slide {
-  visibility: hidden;
+/* Smaller text for 'Del' */
+.smaller {
+  font-size: 0.7em; /* Adjust the size of 'Del' relative to 'Gelateria' and 'Centro' */
+  color: #f7b3a2; /* Lighter color for 'Del' */
 }
 
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
+/* Media queries for various breakpoints */
+@media (min-width: 1200px) {
+  /* Large desktops */
+  .heroCarousel-title {
+    font-size: 12rem; /* Adjust font size as needed */
+    top: -15%; /* Position the title above the image */
+  }
 }
 
-.slick-arrow.slick-hidden {
-  display: none;
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Small desktops */
+  .heroCarousel-title {
+    font-size: 12rem; /* Adjust font size as needed */
+    top: -15%; /* Position the title above the image */
+  }
 }
 
-/* Media Queries */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablets */
+  .heroCarousel-title {
+    font-size: 7rem; /* Adjust font size as needed */
+    top: -15%; /* Position the title above the image */
+  }
+}
 
-@media (max-width: 768px) {
-  .carousel-heading {
-    font-size: 2.5rem; /* Adjust for medium screens */
+@media (max-width: 767px) {
+  /* Mobile phones */
+  .heroCarousel-title {
+    font-size: 5rem; /* Adjust font size as needed */
+    top: -20%; /* Position the title properly on mobile devices */
   }
 }
 
 @media (max-width: 480px) {
-  .carousel-heading {
-    font-size: 1.8rem; /* Adjust for smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .slick-slide img {
-    max-height: 400px; /* Smaller height for medium screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .slick-slide img {
-    max-height: 300px; /* Smaller height for mobile screens */
+  /* Smaller mobile phones */
+  .heroCarousel-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    top: -20%; /* Keep the title in the same position */
   }
 }
