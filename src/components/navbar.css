@@ -9,77 +9,108 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='84' height='16' viewBox='0 0 84 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M78 7V4h-2v3h-3v2h3v3h2V9h3V7h-3zM30 7V4h-2v3h-3v2h3v3h2V9h3V7h-3zM10 0h2v16h-2V0zm6 0h4v16h-4V0zM2 0h4v16H2V0zm50 0h2v16h-2V0zM38 0h2v16h-2V0zm28 0h2v16h-2V0zm-8 0h6v16h-6V0zM42 0h6v16h-6V0z' fill='%23ffa5b2' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
-  border-radius: 8px; /* This will add a border radius to the navbar */
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* This will add a slight drop shadow to the navbar */
-  position: sticky; /* This will make the navbar sticky */
-  top: 0; /* This will stick the navbar to the top of the page */
+  position: sticky;
+  top: 0;
+  height: 70px;
 }
 
-.navbar-logo {
-  display: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); /* Adds a drop shadow effect to the logo */
+.navbar-left {
+  display: flex;
+  width: 70%; /* Directly set to 70% of the navbar */
+  background-image: url("../assets/scallop-green.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@media (max-width: 768px) {
-  .navbar-logo {
-    display: block;
-  }
-
-  .navbar-logo img {
-    width: 60px; /* Adjust this to change the width of the logo on mobile screens */
-    height: auto; /* This will maintain the aspect ratio of the logo */
-  }
+.navbar-left .navbar-address {
+  align-self: flex-start;
 }
 
 .navbar-address {
+  font-family: "Sofia Pro SemiBold";
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.navbar-address em {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.navbar-left .home-icon {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-right {
   display: flex;
-  flex-direction: row; /* Keep address next to logo */
+  justify-content: center;
   align-items: center;
-  gap: 20px; /* Space between logo and address */
-  font-size: 3rem; /* Adjust as needed */
-  font-family: Monterio, sans-serif; /* Adjust as needed */
-  font-weight: bold;
-  color: black;
+  width: 30%; /* Directly set to 30% of the navbar */
+  background-image: url("../assets/scallop-pink.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Change this from 'cover' to 'contain' */
+  background-position: center;
+  align-items: flex-start;
+}
+
+.navbar-right,
+.order-now {
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the order-now hyperlink so it just looks like an all uppercase order now text in monterio that links you to the modal */
+
+.order-now {
+  font-family: "Sofia Pro Regular";
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+/* Remove the browser default to underline any link */
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.order-now a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-icon {
+  width: 24px; /* Adjust this value to make the icon smaller or larger */
+  height: 24px; /* Adjust this value to make the icon smaller or larger */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: row; /* Adjust layout for smaller screens */
-    padding: 10px;
-    height: 50px;
-  }
 
+@media (min-width: 769px) {
   .navbar-address {
-    display: none; /* Optionally hide the address on smaller screens */
-  }
-
-  .order-now {
-    padding: 8px 16px; /* Slightly smaller padding */
-  }
-
-  .navbar-Logo {
-    display: block; /* Show the logo on smaller screens */
+    /* ... */
+    padding-left: 10px; /* Add this line */
+    /* ... */
   }
 }
 
-@media (max-width: 415px) {
-  .navbar-container {
-    justify-content: space-between; /* Align items to the start and end of the container */
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px; /* Adjust this value to reduce the size of the navbar on mobile screens */
   }
 
-  .logo,
-  .order-now {
-    flex-basis: auto; /* Each takes the space it needs */
-    text-align: center; /* Center align the logo */
-    margin-bottom: 10px; /* Space between logo and button */
+  .navbar-left {
+    display: none; /* Hide the left side of the navbar on screens smaller than 768px */
   }
 
-  .order-now {
-    order: 2; /* Order now button goes below */
-    margin-left: auto; /* Push the button to the right */
+  .navbar-right {
+    width: 100%; /* Make the right side of the navbar take up the full width on screens smaller than 768px */
+    background-image: url("../assets/scallop-green.png"); /* Change the background image to the green scalloped border on screens smaller than 768px */
   }
 }
