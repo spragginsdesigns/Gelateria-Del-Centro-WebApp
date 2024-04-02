@@ -1,24 +1,16 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.1abfa322.css",
-    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.ba57fb33.js",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.e5968ee5.css",
+    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.babf868a.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/rosa-rafael-Nag3E3yzygU-unsplash.jpg": "/Gelateria-Del-Centro-WebApp/static/media/rosa-rafael-Nag3E3yzygU-unsplash.6b4b7290378bf8d67f16.jpg",
     "static/media/sharon-tay-V6z3C3ru9zQ-unsplash.jpg": "/Gelateria-Del-Centro-WebApp/static/media/sharon-tay-V6z3C3ru9zQ-unsplash.d33acc569158ccdf184f.jpg",
     "static/media/carousel-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/carousel-image.9edbcfdf19c226556612.jpg",
     "static/media/warnors-image-1.jpg": "/Gelateria-Del-Centro-WebApp/static/media/warnors-image-1.88f007760a7eab00221a.jpg",
     "static/media/footer-background-main.jpg": "/Gelateria-Del-Centro-WebApp/static/media/footer-background-main.351086c0fcf61c8bb420.jpg",
-    "static/media/Pistachio-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Pistachio-web.eac2e26967b6d08499b6.jpg",
-    "static/media/Affogato-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Affogato-web.91bbc81a5da4e496dd06.jpg",
-    "static/media/Cashew_Milk_Himalayan_Salted_Caramel-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Cashew_Milk_Himalayan_Salted_Caramel-web.2a41ababa23c7a8985dc.jpg",
     "static/media/Caramello_Chocolate_Crunch-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Caramello_Chocolate_Crunch-web.1920dddc7c04c3037d37.jpg",
-    "static/media/Limoncello-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Limoncello-web.5025dc7c73b09cb080b1.jpg",
     "static/media/Coconut_Milk_Indonesian_Vanilla_Bean-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Coconut_Milk_Indonesian_Vanilla_Bean-web.5109017c8abce1f65783.jpg",
     "static/media/Dark_Chocolate-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Dark_Chocolate-web.53be61d92856e6435c6a.jpg",
-    "static/media/Honey_Lavender-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Honey_Lavender-web.53163bff98ab2cab5197.jpg",
-    "static/media/Crème_Brûlée-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Crème_Brûlée-web.b9e41070accb355679d7.jpg",
-    "static/media/Stracchiatella-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Stracchiatella-web.f8ad585b3d7546526fc8.jpg",
-    "static/media/Chocolate_Strawberry-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Chocolate_Strawberry-web.39291e686dd175399bcc.jpg",
     "static/media/MonterioLight.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioLight.c79bae9efc447b3b4465.ttf",
     "static/media/MonterioBold.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioBold.13a46640b2988b6d2e0d.ttf",
     "static/media/Sofia Pro Semi Bold Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Semi Bold Italic Az.a8e67fd3694b4a1b207c.woff",
@@ -51,12 +43,12 @@
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/uber-eats-logos-idT_4VNf_n.svg": "/Gelateria-Del-Centro-WebApp/static/media/uber-eats-logos-idT_4VNf_n.8b969d35d373b512664b78f912f19abc.svg",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.1abfa322.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.1abfa322.css.map",
-    "main.ba57fb33.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.ba57fb33.js.map",
+    "main.e5968ee5.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.e5968ee5.css.map",
+    "main.babf868a.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.babf868a.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1abfa322.css",
-    "static/js/main.ba57fb33.js"
+    "static/css/main.e5968ee5.css",
+    "static/js/main.babf868a.js"
   ]
 }
