@@ -161,3 +161,13 @@
   src: local("Sofia Pro Black Italic"),
     url("../public/fonts/Sofia Pro Black Italic Az.woff") format("woff");
 }
+
+/* Our Favorites Section Special Font */
+
+@font-face {
+  font-family: "Brokefold Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Brokefold Sans"),
+    url("../public/fonts/BrokefoldSansBold-lg8oy.otf") format("opentype");
+}

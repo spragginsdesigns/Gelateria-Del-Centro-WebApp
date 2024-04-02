@@ -20,6 +20,7 @@ body {
   align-items: center;
   font-family: "Monterio", sans-serif;
   box-sizing: border-box;
+  background-image: url("../assets/footer-background-main.jpg");
 }
 
 /* Rest of your CSS */

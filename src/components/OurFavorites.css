@@ -1,79 +1,173 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-/* Download Menu Button */
+/* OurFavorites.css */
 
-.download-button {
-  background-color: #eb6368; /* Pink background */
-  border: none; /* Remove border */
-  color: white; /* White text */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Centered text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; /* Mouse pointer on hover */
-  border-radius: 20px; /* Rounded corners */
-  transition-duration: 0.4s; /* Transition */
-  margin-bottom: 5%;
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.download-button:hover {
-  background-color: white; /* White background */
-  color: black; /* Black text */
+.favorites-lowercase {
+  font-size: 1.5em;
+  color: #000000;
+  font-family: "Georgia", serif;
+  margin-right: 0.5em;
+  font-style: italic; /* Make the text italic */
 }
-.favorites-container {
+
+.favorites-uppercase {
+  font-size: 3em;
+  color: #d5b681;
+  font-family: "Brokefold Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.favorites {
+  font-family: "Sofia Pro", sans-serif;
   text-align: center;
-  color: #000000; /* Changes the font color */
-  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* h1 green color */
+.favorites-title,
+.favorites-subtitle {
+  color: #c8102e;
+}
+
+.favorites-subtitle {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px; /* Reduce the bottom margin */
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
 
 .favorites-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  justify-items: center;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Changes to 2 columns on larger screens */
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* Changes to 1 column on medium screens */
-  }
+  margin-top: 2em;
 }
 
-.favorite-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  max-width: 320px;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 12px; /* Add rounded corners to the cards */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a drop shadow */
-  cursor: pointer;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='77' height='107' viewBox='0 0 77 107'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='stamp-collection' fill='%23f2ccb2' fill-opacity='1'%3E%3Cpath d='M46 101a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10V6a5 5 0 0 1-5-5h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0H6a5 5 0 0 1-5 5v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5zm15-2a7 7 0 0 0-6.71 5h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0H7.71A7.01 7.01 0 0 0 3 99.29v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58A7 7 0 0 0 3 9.29V7.71A7.02 7.02 0 0 0 7.71 3h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58A7.02 7.02 0 0 0 74 7.71v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7.01 7.01 0 0 0-4.71 4.71h-1.58A7 7 0 0 0 61 99zM12 12h53v83H12V12zm51 81H14V14h49v79z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.favorite-item {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative; /* Added to position the checkmark absolutely within */
+  padding-bottom: 32px; /* Space for the checkmark */
 }
 
-.favorite-card h2 {
-  color: #4caf50; /* Green */
-}
-
-.favorite-card img {
+.favorite-image {
   width: 100%;
-  height: 180px; /* Set a specific height for the images */
-  object-fit: cover; /* Cover the whole area of the container */
-  border-radius: 12px; /* Add rounded corners to the images */
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); /* Add a slight drop shadow */
+  height: auto; /* Adjust to auto for better aspect ratio control */
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 20px; /* Apply a border-radius to the top-left corner of the image */
+  border-top-right-radius: 20px; /* Apply a border-radius to the top-right corner of the image */
 }
-.favorite-card:hover {
-  transform: scale(1.05); /* Scales the card up slightly */
+
+.favorite-label {
+  display: flex;
+  justify-content: center; /* Center label text and checkmark */
+  align-items: center;
+  padding: 15px;
+  flex-grow: 1; /* Make label take up remaining space */
+}
+
+.favorite-name {
+  color: #f8b3a2;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: "Sofia Pro Regular", sans-serif;
+  padding: 0em 1em; /* Adjust padding for spacing */
+  overflow: visible; /* Allow text to show completely */
+  text-align: center;
+}
+
+.favorite-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-checkmark {
+  background-color: #6fa58f;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  bottom: -16px; /* Adjust this value as needed to match the overlap in your design */
+  transform: translateX(-50%);
+}
+
+.flavor-part {
+  display: block; /* Ensures each part of the flavor name is on a new line */
+  font-size: 1.2em; /* Adjust font-size as necessary */
+  line-height: 1.2; /* Adjust line-height for spacing between the two parts */
+}
+
+.color-bar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%; /* Adjust the width of the color bar so it centers correctly */
+  margin-top: 40px; /* Add space above the color bar */
+}
+
+@media (max-width: 768px) {
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .favorite-item {
+    width: auto;
+    height: auto;
+    margin: 10px;
+  }
+
+  .favorite-name-container {
+    margin-top: 0.5em;
+  }
+
+  .favorite-checkmark {
+    position: absolute;
+    bottom: -16px; /* Adjust for mobile if needed */
+  }
+
+  .favorite-name {
+    font-size: 1em; /* Adjust if needed for mobile */
+  }
+}
+
+@media (max-width: 480px), (max-device-width: 480px) {
+  .favorites-title,
+  .favorites-subtitle,
+  .favorite-name {
+    font-size: smaller;
+  }
+
+  .favorite-item {
+    padding: 15px;
+  }
+
+  .favorite-checkmark {
+    font-size: 16px; /* Adjust for smaller devices */
+    bottom: -16px; /* Maintain consistency */
+  }
 }

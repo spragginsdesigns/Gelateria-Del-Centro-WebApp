@@ -68,7 +68,7 @@
 @media (max-width: 480px) {
   /* Smaller mobile phones */
   .heroCarousel-title {
-    font-size: 2.5rem; /* Adjust font size as needed */
-    top: -20%; /* Keep the title in the same position */
+    font-size: 2.7rem; /* Adjust font size as needed */
+    top: -12%; /* Keep the title in the same position */
   }
 }

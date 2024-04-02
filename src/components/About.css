@@ -1,160 +1,116 @@
+body {
+  overflow-x: hidden;
+}
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
-  gap: 20px; /* Adds some space between the columns */
-  align-items: start; /* Aligns the content to the top */
-  justify-content: center; /* Horizontally centers the content */
-  padding: 20px; /* Adds some space around the content */
-  margin: 0 auto; /* Adds equal whitespace on the left and right */
-  max-width: 1200px; /* Adjust as needed */
-  padding-top: 80px;
-  color: #000000; /* Changes the font color */
-  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-.description {
-  padding: 20px; /* Adds some space inside the description */
-  position: relative; /* Needed for the pseudo-element */
-  text-align: left;
+/* Hours, Special Events & Our Why Headings */
+.about-container h2 {
+  color: #978431;
 }
 
-.description::after {
-  content: "";
-  position: absolute;
-  right: -10px; /* Adjust as needed */
-  top: 0;
-  bottom: 0;
-  width: 1px; /* Adjust as needed */
-  background: linear-gradient(
-    to bottom,
-    #ff7eb9,
-    #ff007d
-  ); /* Adjust as needed */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
-  border-radius: 50%; /* Makes the line slightly rounded */
-  margin: 20px 0; /* Adds some space above and below the line */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  /* Adds a drop shadow */
-  border-radius: 70%;
-  /* Makes the line slightly rounded */
+/* Description under logo and paragraphs under each heading */
+.about-container p {
+  font-family: "Georgia", serif;
 }
 
-.learnMore-button {
-  background-color: #eb6368;
-  /* Pink background */
-  border: none;
-  /* Remove border */
-  color: white;
-  /* White text */
-  padding: 15px 32px;
-  /* Some padding */
-  text-align: center;
-  /* Centered text */
-  text-decoration: none;
-  /* Remove underline */
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  /* Mouse pointer on hover */
-  border-radius: 20px;
-  /* Rounded corners */
-  transition-duration: 0.4s;
-  /* Transition */
-  margin-bottom: 5%;
-  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
-}
-
-.learnMore-button:hover {
-  background-color: white;
-  /* White background */
-  color: black;
-  /* Black text */
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(to right, #ff7eb9, #ff007d);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 70%;
-  margin: 20px auto; /* Centers the line horizontally */
-  width: 50%; /* Adjust as needed */
-}
-
-@media (max-width: 768px) {
-  .description::after {
-    position: relative;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    height: 1px;
-    width: 100%;
-    left: 0;
-    margin: 20px 0; /* Adds some space above and below the line */
-  }
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .store-logo {
-  width: 100%;
-  max-width: 150px; /* Adjust as needed */
-  margin-bottom: 20px; /* Adds some space below the logo */
-  border-radius: 50%; /* Makes the logo slightly rounded */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
-  /* Center the logo image in the center of the grid */
+  max-width: 150px;
+  margin-bottom: 20px;
+  display: block;
+  align-self: flex-start; /* Aligns the logo to the start of the flex container */
+}
+
+.about-description {
+  font-family: "Georgia", serif;
+  color: #978431;
+  text-align: justify;
+  font-style: italic;
+}
+
+.info-section {
+  border-left: 2px solid #70a58f;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.info-section h2 {
+  font-family: "Sofia Pro Bold", serif;
+  color: #f8b3a2;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.special-events-text {
+  font-family: "Georgia", serif; /* Or whichever font you're using */
+  color: #000; /* Your text color */
+  padding-bottom: 3px; /* Space between text and underline */
+  border-bottom: 3px dashed #978431; /* Dashed line styling */
+  display: inline; /* Only underline the text, not the full container width */
+  cursor: pointer; /* Change cursor to indicate it's clickable if it's a link */
+  font-style: italic;
+}
+
+.color-bar {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.description,
-.sidebar {
-  padding: 20px; /* Adds some space inside the description and sidebar */
-}
-
-.sidebar {
-  padding: 20px; /* Adds some space inside the sidebar */
-  text-align: right; /* Aligns the text to the right */
-  position: sticky; /* Makes the sidebar stick to the top of the viewport */
-  top: 0; /* Aligns the sidebar with the top of the viewport */
-  color: #000000;
-  /* Changes the font color */
-  font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
-  /* Changes the font family */
-}
-
-.sidebar ul {
-  list-style-type: none;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    grid-template-columns: 1fr; /* Stacks the columns vertically on smaller screens */
-  }
-
-  .sidebar {
-    position: static; /* Resets the position on smaller screens */
-    text-align: left; /* Aligns the text to the left on smaller screens */
-  }
-}
-
-.about-container h1,
-.about-container h2,
-.about-container h3,
-.about-container h4,
-.about-container h5,
-.about-container h6 {
-  color: #ffa5b2; /* Soft Pink */
+  max-width: 70%; /* Adjust the width of the color bar so it centers correctly */
 }
 
 /* Responsive Layout */
 
+/* Medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+  .color-bar {
+    max-width: 80%; /* Slightly larger percentage since the screen is smaller */
+  }
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 768px) {
+  .color-bar {
+    max-width: 70%; /* Even larger percentage for small screens */
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .color-bar {
+    max-width: 60%; /* Adjust width for smaller screens */
+  }
+  .store-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-container {
-    grid-template-columns: 1fr; /* Stacks the columns vertically on smaller screens */
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
 
-  .sidebar {
-    text-align: left; /* Aligns the text to the left on smaller screens */
+  .info-section {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .store-logo {
+    max-width: 150px;
   }
 }

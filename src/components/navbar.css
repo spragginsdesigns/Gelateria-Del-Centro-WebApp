@@ -71,6 +71,26 @@ body {
   color: #ffffff;
   font-size: 1.6rem;
   text-decoration: none;
+  position: relative; /* Required for positioning the pseudo-element */
+  display: inline-block; /* Ensures the pseudo-element aligns properly under the text */
+}
+
+/* Add this after your .order-now style */
+.order-now::after {
+  content: "";
+  display: block; /* Creates a new line for the pseudo-element */
+  width: 100%; /* Matches the width of the 'Order Now' text */
+  height: 2px; /* The thickness of the dashed line */
+  background: repeating-linear-gradient(
+    to right,
+    #f7b3a2,
+    #f7b3a2 5px,
+    /* Width of each dash */ transparent 5px,
+    /* Spacing between dashes */ transparent 10px /* Continue the pattern */
+  );
+  position: absolute;
+  bottom: -5px; /* Adjust the space below the text */
+  left: 0;
 }
 
 /* Remove the browser default to underline any link */
