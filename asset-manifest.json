@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.3678dbc9.css",
-    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.ecf492ca.js",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.de2dde24.css",
+    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.04c57cb1.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
-    "static/media/rosa-rafael-Nag3E3yzygU-unsplash.jpg": "/Gelateria-Del-Centro-WebApp/static/media/rosa-rafael-Nag3E3yzygU-unsplash.6b4b7290378bf8d67f16.jpg",
-    "static/media/sharon-tay-V6z3C3ru9zQ-unsplash.jpg": "/Gelateria-Del-Centro-WebApp/static/media/sharon-tay-V6z3C3ru9zQ-unsplash.d33acc569158ccdf184f.jpg",
     "static/media/carousel-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/carousel-image.9edbcfdf19c226556612.jpg",
     "static/media/warnors-image-1.jpg": "/Gelateria-Del-Centro-WebApp/static/media/warnors-image-1.88f007760a7eab00221a.jpg",
     "static/media/footer-background-main.jpg": "/Gelateria-Del-Centro-WebApp/static/media/footer-background-main.351086c0fcf61c8bb420.jpg",
+    "static/media/Cashew_Milk_Himalayan_Salted_Caramel-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Cashew_Milk_Himalayan_Salted_Caramel-web.2a41ababa23c7a8985dc.jpg",
     "static/media/Caramello_Chocolate_Crunch-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Caramello_Chocolate_Crunch-web.1920dddc7c04c3037d37.jpg",
     "static/media/Coconut_Milk_Indonesian_Vanilla_Bean-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Coconut_Milk_Indonesian_Vanilla_Bean-web.5109017c8abce1f65783.jpg",
     "static/media/Dark_Chocolate-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Dark_Chocolate-web.53be61d92856e6435c6a.jpg",
@@ -44,12 +43,12 @@
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/uber-eats-logos-idT_4VNf_n.svg": "/Gelateria-Del-Centro-WebApp/static/media/uber-eats-logos-idT_4VNf_n.8b969d35d373b512664b78f912f19abc.svg",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.3678dbc9.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.3678dbc9.css.map",
-    "main.ecf492ca.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.ecf492ca.js.map",
+    "main.de2dde24.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.de2dde24.css.map",
+    "main.04c57cb1.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.04c57cb1.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3678dbc9.css",
-    "static/js/main.ecf492ca.js"
+    "static/css/main.de2dde24.css",
+    "static/js/main.04c57cb1.js"
   ]
 }
