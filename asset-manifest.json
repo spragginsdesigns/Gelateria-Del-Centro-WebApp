@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.f9cc7541.css",
-    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.a5e412a6.js",
+    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.9c3404fe.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/carousel-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/carousel-image.9edbcfdf19c226556612.jpg",
     "static/media/warnors-image-1.jpg": "/Gelateria-Del-Centro-WebApp/static/media/warnors-image-1.88f007760a7eab00221a.jpg",
+    "static/media/contact-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/contact-image.739d9f1d6af95e6f8606.jpg",
     "static/media/footer-background-main.jpg": "/Gelateria-Del-Centro-WebApp/static/media/footer-background-main.351086c0fcf61c8bb420.jpg",
     "static/media/Cashew_Milk_Himalayan_Salted_Caramel-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Cashew_Milk_Himalayan_Salted_Caramel-web.2a41ababa23c7a8985dc.jpg",
     "static/media/Caramello_Chocolate_Crunch-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Caramello_Chocolate_Crunch-web.1920dddc7c04c3037d37.jpg",
@@ -44,11 +45,11 @@
     "static/media/uber-eats-logos-idT_4VNf_n.svg": "/Gelateria-Del-Centro-WebApp/static/media/uber-eats-logos-idT_4VNf_n.8b969d35d373b512664b78f912f19abc.svg",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
     "main.f9cc7541.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.f9cc7541.css.map",
-    "main.a5e412a6.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.a5e412a6.js.map",
+    "main.9c3404fe.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.9c3404fe.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9cc7541.css",
-    "static/js/main.a5e412a6.js"
+    "static/js/main.9c3404fe.js"
   ]
 }
