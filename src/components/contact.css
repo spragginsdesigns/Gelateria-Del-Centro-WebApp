@@ -74,6 +74,24 @@
 .contact-form button:hover {
   background-color: darken(#f7b3a2, 10%);
 }
+
+/* General style for submission messages */
+.submission-message {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Georgia, sans-serif;
+}
+
+/* Specific styles for success and error messages */
+.submission-message.success {
+  color: green; /* Green for success messages */
+  font-family: Georgia, sans-serif;
+}
+
+.submission-message.error {
+  color: red; /* Red for error messages */
+  font-family: Georgia, sans-serif;
+}
 /* Add media queries as needed for responsiveness */
 
 @media (max-width: 768px) {

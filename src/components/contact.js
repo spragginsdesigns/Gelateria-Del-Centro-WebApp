@@ -1,9 +1,26 @@
-// ContactPage.js
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import contactImage from '../assets/contact-image.jpg';
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
+    const form = useRef();
+    // State to manage submission status and message
+    const [submissionStatus, setSubmissionStatus] = useState({ message: '', type: '' });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // Update 'your-user-token' with your actual EmailJS user token
+        emailjs.sendForm('service_fj7dt93', 'template_azx9qwb', form.current, 'CLQoNfQmZ3BsycBFw')
+            .then((result) => {
+                setSubmissionStatus({ message: "Message sent successfully!", type: 'success' });
+                form.current.reset(); // Reset the form fields after successful submission
+            }, (error) => {
+                setSubmissionStatus({ message: "Failed to send message, please try again.", type: 'error' });
+            });
+    };
+
     return (
         <div className="contact-page-container">
             <div className="contact-image-container">
@@ -16,21 +33,27 @@ const ContactPage = () => {
                 <p>
                     General inquiries, special events, or a note for the team.<br />We’ll get back to you right away.
                 </p>
-                <form className="contact-form">
+                <form ref={form} className="contact-form" onSubmit={sendEmail}>
                     <label className="form-label" htmlFor="name">NAME</label>
-                    <input type="text" id="name" placeholder="" />
+                    <input type="text" name="name" id="name" placeholder="Your Name" />
 
                     <label className="form-label" htmlFor="phone">PHONE</label>
-                    <input type="tel" id="phone" placeholder="" />
+                    <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" />
 
                     <label className="form-label" htmlFor="email">EMAIL</label>
-                    <input type="email" id="email" placeholder="" />
+                    <input type="email" name="email" id="email" placeholder="Your Email Address" />
 
                     <label className="form-label" htmlFor="message">MESSAGE</label>
-                    <textarea id="message" placeholder=""></textarea>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
 
                     <button type="submit">SEND</button>
                 </form>
+                {/* Display submission message */}
+                {submissionStatus.message && (
+                    <p className={`submission-message ${submissionStatus.type}`}>
+                        {submissionStatus.message}
+                    </p>
+                )}
             </div>
         </div>
     );
