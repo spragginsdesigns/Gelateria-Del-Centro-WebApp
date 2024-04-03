@@ -48,8 +48,10 @@ const OurFavorites = () => {
     return (
         <div className="favorites">
             <div className="title-container">
-                <h1 className="favorites-lowercase">our</h1>
-                <h1 className="favorites-uppercase">FAVORITES</h1>
+                <div className="title-line">
+                    <h1 className="favorites-lowercase">our</h1>
+                    <h1 className="favorites-uppercase">FAVORITES</h1>
+                </div>
             </div>
             <p className="favorites-subtitle">Always available, always delicious</p>
             <div className="favorites-grid">

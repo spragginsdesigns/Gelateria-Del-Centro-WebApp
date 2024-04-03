@@ -1,44 +1,48 @@
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.content {
-  flex: 1 0 auto;
-}
-
-.FooterContainer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Monterio", sans-serif;
-  box-sizing: border-box;
+/* Footer.css */
+.footer-container {
+  background-color: #000; /* Fallback for browsers that do not support images */
   background-image: url("../assets/footer-background-main.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding to your preference */
 }
 
-/* Rest of your CSS */
-
-@media (max-width: 412px) {
-  .footer {
-    flex-direction: column;
-    align-items: flex-start; /* Aligns items to the start of the cross axis */
-  }
+.footer-title {
+  font-family: "Monterio", serif;
+  font-size: 2.5em; /* Adjust size to your preference */
 }
 
-.footer h2,
-.footer p {
-  margin: 0;
+.footer-address {
+  font-family: "Sofia Pro SemiBold";
+  margin: 20px 0; /* Spacing between title and address */
 }
 
-.footer a {
-  color: black;
-  text-decoration: none;
-  margin: 0 10px;
+.footer-map-link {
+  color: #ffffff; /* Adjust color to match the design */
+  text-decoration: none; /* Removes underline */
+  font-style: italic;
+  background-image: linear-gradient(to right, #f7b3a2 33%, transparent 0%);
+  background-position: 0 1.2em;
+  background-size: 3px 1px;
+  background-repeat: repeat-x;
 }
+
+.footer-nav {
+  margin-top: 20px; /* Spacing between address and navigation links */
+}
+
+.footer-nav-link {
+  font-family: "Sofia Pro Bold";
+  color: #f4e4c7; /* Adjust color to match the design */
+  margin: 0 10px; /* Spacing between links */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
+}
+
+.footer-nav-link:hover {
+  text-decoration: underline; /* Underline on hover for better user experience */
+}
+
+/* Add any additional responsive styles as necessary */
