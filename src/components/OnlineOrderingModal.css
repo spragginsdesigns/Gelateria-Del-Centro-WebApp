@@ -1,175 +1,90 @@
-/* Base styles for modal backdrop */
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.online-ordering-modal-overlay {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  backdrop-filter: blur(2.8px);
-  border-radius: 18px;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    247,
+    179,
+    162,
+    0.92
+  ); /* Updated background color with transparency */
+  z-index: 1000; /* Ensure it's above other content */
+  overflow-y: auto; /* Enables scrolling if the modal is taller than the screen */
 }
 
-/* Container for services */
-.service-container {
+.online-ordering-modal {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-/* Styles for service logos */
-.service-logo {
-  width: 150px;
-  height: auto;
-  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.7));
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  padding: 10px;
-}
-
-/* Base styles for service cards */
-.service-card {
-  color: white;
-  width: 45%;
-  margin-bottom: 15px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-}
-
-/* Square button styles */
-.service-card.square .order-button {
-  background-color: #3e4348;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* DoorDash button styles */
-.service-card.doordash .order-button {
-  background-color: #ff3008;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* Uber Eats button styles */
-.service-card.ubereats .order-button {
-  background-color: #06c167;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* GrubHub button styles */
-.service-card.grubhub .order-button {
-  background-color: #ff5500;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* Styles for modal content */
-.modal-content {
-  position: relative;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-image: url("../assets/warnors-image-1.jpg");
-  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/blue-art-nouveau-frame-800x800.png");
+  background-size: 100% 100%; /* Adjust this as needed */
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow-y: auto;
-  max-height: calc(100% - 40px);
+  width: 800px; /* Assuming the image should be 800px wide */
+  height: 800px; /* Assuming the image should be 800px high */
+  margin: auto;
+  max-height: 90vh; /* 90% of the viewport height */
+  box-sizing: border-box;
+  overflow-y: auto; /* Adds scroll to the modal content if it overflows */
 }
 
-/* Styles for close button */
-.close-btn {
+.modal-title {
+  font-family: "Brokefold Sans", sans-serif;
+  font-size: 40px;
+  color: #b68173;
+}
+
+.modal-divider {
+  border: none;
+  height: 2px;
+  background-color: #d3907f;
+  margin: 20px auto; /* Centers the line */
+  width: 80%; /* Adjust width as needed */
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  font-family: "Sofia Pro Bold", sans-serif;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit; /* Inherits the white color from its parent */
+  display: block; /* Makes the link fill the entire list item for easier clicking */
+  border-bottom: 2px solid #d3907f; /* The horizontal line between services */
+  padding: 10px 0; /* Space above and below text */
+  margin-bottom: 1rem; /* Add some margin between the links */
+  font-size: 44px;
+}
+
+.modal-close-button {
   position: absolute;
   top: 10px;
   right: 10px;
   border: none;
-  background: #ff5f5f;
+  background: none;
   color: white;
-  border-radius: 5px;
-  height: 40px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
+  font-size: 1.5em;
   cursor: pointer;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
 }
 
-.close-btn:hover {
-  background-color: #ff1f1f;
-  box-shadow: 0px 15px 20px rgba(2, 2, 2, 0.2);
-}
+/* Responsive Styles */
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .modal-backdrop {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-  }
-
-  .service-card {
-    width: 90%;
-    margin: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-card {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .service-card .order-button {
-    display: block;
-    width: auto;
-    margin: 10px auto;
-  }
-
-  .service-logo {
-    width: 100px;
-  }
-
-  .close-btn {
-    padding: 5px 10px;
+@media (max-width: 800px) {
+  .online-ordering-modal {
+    width: 90%; /* You can adjust this for smaller screens */
+    height: auto; /* This will make the height responsive */
+    padding: 10px; /* Less padding on smaller screens */
   }
 }

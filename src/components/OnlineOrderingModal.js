@@ -1,75 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import frame from '../assets/blue-art-nouveau-frame-800x800.png';
 import './OnlineOrderingModal.css';
-import UberEatsLogo from '../assets/uber-eats-logos-idT_4VNf_n.svg'; // Import the logo
-import GrubHubLogo from '../assets/grubhub-logos-id2LENoj_F.svg'; // Import the logo
-import DoorDashLogo from '../assets/doordashlogo.svg'; // Import the logo
-import SquareLogo from '../assets/square-logos-idVBUxlM3x.svg'; // Import the logo
 
-const OnlineOrderingModal = ({ isOpen, toggleModal }) => {
-    // Note: Moved the condition inside useEffect
-    useEffect(() => {
-        if (isOpen) {
-            const script = document.createElement('script');
-            script.src = "http://gh-prod-restaurant-shortlinks.s3-website-us-east-1.amazonaws.com/libs/scripts/iframeLib.min.js";
-            script.async = true;
-            document.body.appendChild(script);
-
-            // Cleanup function to remove the script when the component unmounts or modal closes
-            return () => document.body.removeChild(script);
-        }
-    }, [isOpen]); // Dependency array ensures effect runs only when `isOpen` changes
-
+// Accept the isOpen and toggleModal props
+function OnlineOrderingModal({ isOpen, toggleModal }) {
+    // Conditionally render the modal based on isOpen
     if (!isOpen) return null;
 
     return (
-        <div className="modal-backdrop" onClick={toggleModal}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <h2>Order Online</h2>
-                <p>Click on a service below to order:</p>
-                <div className="service-container">
-                    {/* Square Button JSX */}
-                    <div className="service-card square">
-                        {/* <h3>Square</h3> */}
-                        <img className="service-logo" src={SquareLogo} alt="Square logo. Click to order from Gelateria Del Centro's Square online store." />
-
-                        <p>Order through Square for pickup.</p>
-                        <a href="https://eatgelato.square.site/" target="_blank" rel="noopener noreferrer">
-                            <button className="order-button">Order Online</button> {/* Styled Button */}
-                        </a>
-                    </div>
-                    {/* DoorDash Card */}
-                    {/* DoorDash Button JSX */}
-                    <div className="service-card doordash">
-                        {/* <h3>DoorDash</h3> */}
-                        <img className="service-logo" src={DoorDashLogo} alt="DoorDash logo. Click to order from Gelateria Del Centro on DoorDash." />
-                        <p>Order through DoorDash for delivery.</p>
-                        <a href="https://www.doordash.com/store/gelateria-del-centro-fresno-27971303/" target="_blank" rel="noopener noreferrer">
-                            <button className="order-button">Order Online</button> {/* Styled Button */}
-                        </a>
-                    </div>
-                    {/* Uber Eats Card & Button */}
-                    <div className="service-card ubereats">
-                        {/* <h3>Uber Eats</h3> */}
-                        <img className="service-logo" src={UberEatsLogo} alt="Uber Eats logo. Click to order from Gelateria Del Centro on Uber Eats." />
-                        <p>Order through Uber Eats for delivery.</p>
-                        <a href="https://www.ubereats.com/store/gelateria-del-centro/Ryr3N2GUXNOenW50_tbztQ?diningMode=DELIVERY&mod=storeDeliveryTime&modctx=%257B%2522entryPoint%2522%253A%2522store-auto-surface%2522%252C%2522encodedStoreUuid%2522%253A%2522Ryr3N2GUXNOenW50_tbztQ%2522%257D&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjkzNjAlMjBOJTIwQmxhY2tzdG9uZSUyMEF2ZSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMmhlcmUlM0FhZiUzQXN0cmVldHNlY3Rpb24lM0FLYVU1OFFkQTlzc2Y3Yi5pdzZBMERCJTNBQ2djSUJDRGdqTGdTRUFFYUJEa3pOakElMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyaGVyZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTM2Ljg3MDkyJTJDJTIybG9uZ2l0dWRlJTIyJTNBLTExOS43OTEyJTdE&ps=1" target="_blank" rel="noopener noreferrer">
-                            <button className="order-button">Order Online</button> {/* Styled Button */}
-                        </a>
-                    </div>
-                    {/* GrubHub Card */}
-                    <div className="service-card grubhub">
-                        {/* <h3>Grubhub</h3> */}
-                        <img className="service-logo" src={GrubHubLogo} alt="Grubhub logo. Click to order from Gelateria Del Centro on Grubhub." />
-                        <p>Order through Grubhub for delivery.</p>
-                        <a href="https://www.grubhub.com/restaurant/gelateria-del-centro-2017-tuolumne-st-fresno/7919504" target="_blank" rel="noopener noreferrer">
-                            <button className="order-button">Order Online</button> {/* Styled Button */}
-                        </a>
-                    </div>
-                </div>
+        <div className="online-ordering-modal-overlay">
+            <div className="online-ordering-modal" style={{ backgroundImage: `url(${frame})` }}>
+                <h2 className="modal-title">ORDER NOW</h2>
+                <hr className="modal-divider" />
+                <ul className="service-list">
+                    <li><a href="https://www.doordash.com/en-US/store/gelateria-del-centro-fresno-27971303/" className="service-link" target="_blank" rel="noreferrer">DOORDASH</a></li>
+                    <li><a href="https://www.ubereats.com/store/gelateria-del-centro/Ryr3N2GUXNOenW50_tbztQ" className="service-link" target="_blank" rel="noreferrer">UBER EATS</a></li>
+                    <li><a href="https://www.grubhub.com/restaurant/gelateria-del-centro-2017-tuolumne-st-fresno/7919504" className="service-link" target="_blank" rel="noreferrer">GRUBHUB</a></li>
+                </ul>
+                <button className="modal-close-button" onClick={toggleModal}>Close</button>
             </div>
-            <button className="close-btn" onClick={toggleModal}>Close</button>
         </div>
     );
-};
+}
 
 export default OnlineOrderingModal;
