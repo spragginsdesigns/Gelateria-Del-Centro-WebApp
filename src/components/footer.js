@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.css';
 import footerBackground from '../assets/footer-background-main.jpg';
-import colorBar from '../assets/color-bar.png';
 
 const Footer = () => {
   return (

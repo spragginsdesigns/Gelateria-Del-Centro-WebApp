@@ -68,6 +68,7 @@
   flex-direction: column;
   justify-content: center; /* Aligns content to center */
   padding: 1em; /* Padding inside the card */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .special-image {
@@ -92,6 +93,7 @@
   font-family: "Sofia Pro Regular", sans-serif;
   text-align: center;
   margin: 0.5em 0; /* Reduced margin */
+  overflow-wrap: break-word; /* Wrap long names */
 }
 
 .flavor-part {
