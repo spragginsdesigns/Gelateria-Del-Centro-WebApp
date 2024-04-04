@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.6087574e.css",
-    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.e6ce1fca.js",
+    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.d2ef9e63.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/carousel-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/carousel-image.9edbcfdf19c226556612.jpg",
     "static/media/warnors-image-1.jpg": "/Gelateria-Del-Centro-WebApp/static/media/warnors-image-1.88f007760a7eab00221a.jpg",
@@ -48,11 +48,11 @@
     "static/media/uber-eats-logos-idT_4VNf_n.svg": "/Gelateria-Del-Centro-WebApp/static/media/uber-eats-logos-idT_4VNf_n.8b969d35d373b512664b78f912f19abc.svg",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
     "main.6087574e.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.6087574e.css.map",
-    "main.e6ce1fca.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.e6ce1fca.js.map",
+    "main.d2ef9e63.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.d2ef9e63.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6087574e.css",
-    "static/js/main.e6ce1fca.js"
+    "static/js/main.d2ef9e63.js"
   ]
 }
