@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.39f585bc.css",
-    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.5b21e434.js",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.1c3330bf.css",
+    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.675b589e.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/carousel-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/carousel-image.9edbcfdf19c226556612.jpg",
     "static/media/contact-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/contact-image.739d9f1d6af95e6f8606.jpg",
@@ -35,7 +35,7 @@
     "static/media/Sofia Pro Bold Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Bold Italic Az.86177a6bc0e9e30dcae7.woff",
     "static/media/GDC-Blunt-Regular.otf": "/Gelateria-Del-Centro-WebApp/static/media/GDC-Blunt-Regular.21f9c6f53780fcacc270.otf",
     "static/media/Gelateria Del Centro STAMP.png": "/Gelateria-Del-Centro-WebApp/static/media/Gelateria Del Centro STAMP.a62098178eb67510778d.png",
-    "static/media/blue-art-nouveau-frame-800x800.png": "/Gelateria-Del-Centro-WebApp/static/media/blue-art-nouveau-frame-800x800.dac1113610b9ca845fa5.png",
+    "static/media/blue-art-nouveau-frame-800x800.png": "/Gelateria-Del-Centro-WebApp/static/media/blue-art-nouveau-frame-800x800.dc7095c01b574d5ba20e.png",
     "static/media/BrokefoldSansBold-lg8oy.otf": "/Gelateria-Del-Centro-WebApp/static/media/BrokefoldSansBold-lg8oy.ddd828c27debb0dec9ad.otf",
     "static/media/scallop-green.png": "/Gelateria-Del-Centro-WebApp/static/media/scallop-green.c6bfb0c9a35eb71cd30a.png",
     "index.html": "/Gelateria-Del-Centro-WebApp/index.html",
@@ -43,12 +43,12 @@
     "static/media/slick.eot": "/Gelateria-Del-Centro-WebApp/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.39f585bc.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.39f585bc.css.map",
-    "main.5b21e434.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.5b21e434.js.map",
+    "main.1c3330bf.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.1c3330bf.css.map",
+    "main.675b589e.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.675b589e.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39f585bc.css",
-    "static/js/main.5b21e434.js"
+    "static/css/main.1c3330bf.css",
+    "static/js/main.675b589e.js"
   ]
 }
