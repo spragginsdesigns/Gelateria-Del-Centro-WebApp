@@ -3,6 +3,7 @@ import './About.css';
 import { Link } from 'react-router-dom';
 import logo from '../assets/Gelateria Del Centro STAMP.png';
 import colorBar from '../assets/color-bar.png';
+import { Link as ScrollLink } from 'react-scroll';
 
 const About = () => {
     return (
@@ -18,9 +19,9 @@ const About = () => {
                     <h2>HOURS</h2>
                     <p>Open Daily: 12p-8:30p</p>
                     <h2>SPECIAL EVENTS?</h2>
-                    <Link to="/events" className="lets-talk">
-                        <span className="special-events-text">Let's Talk!</span>
-                    </Link>
+                    <ScrollLink to="specialEvents" smooth={true} duration={500} className="lets-talk">
+                        <span className="about-special-events-text">Let's Talk!</span>
+                    </ScrollLink>
                     <h2>OUR WHY?</h2>
                     <p>Bring delicious Italian-Style gelato to Downtown Fresno</p>
                 </div>

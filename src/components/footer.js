@@ -5,7 +5,7 @@ import footerBackground from '../assets/footer-background-main.jpg';
 const Footer = () => {
   return (
     <div className="footer-container" style={{ backgroundImage: `url(${footerBackground})` }}>
-      <h1 className="footer-title">Gelateria Del Centro</h1>
+      <h1 className="footer-title">Gelateria Del CentrO</h1>
       <p className="footer-address">
         2017 TUOLUMNE ST in DOWNTOWN FRESNO | <a href="https://maps.app.goo.gl/B8edq4de6SGKTLyD8" className="footer-map-link">google maps</a>
       </p>

@@ -1,0 +1,180 @@
+.special-events-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Space between the image and text */
+  padding: 50px 0; /* Top and bottom padding */
+  min-height: 100vh; /* Full viewport height */
+  background: #fffdee; /* Assuming a background color is needed */
+  margin-bottom: 60px; /* Space below the specialEvents component */
+  margin-top: 60px; /* Space above the specialEvents component */
+  position: relative;
+}
+
+.special-events-container::before,
+.special-events-container::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  content: " ";
+  background-size: 50px 100px;
+  height: 50px;
+  background-repeat: repeat-x;
+}
+
+.special-events-container::before {
+  position: absolute;
+  top: -45px; /* Adjust as needed to fit the top of the container */
+  left: 0;
+  width: 100%;
+  content: " ";
+  background: radial-gradient(
+    circle at 50% 0%,
+    #f6f2d4 25%,
+    /* color of the scallop */ transparent 26%,
+    /* beginning of transparent background */ transparent 40%
+      /* end of transparent background */
+  );
+  background-size: 50px 100px; /* size of the scallops */
+  height: 50px; /* height of the scalloped edge */
+  background-repeat: repeat-x;
+  transform: scaleY(-1); /* flip the scallops upside down */
+}
+
+.special-events-container::after {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  content: " ";
+  background: radial-gradient(
+    circle at 50% 0%,
+    #f6f2d4 25%,
+    transparent 26%,
+    transparent 40%
+  );
+  background-size: 50px 100px;
+  height: 50px;
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+
+.special-events-image {
+  flex: 1; /* Flex value to take half the space */
+  max-width: 50%; /* Limit the width to half of the container */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right end of its container */
+  align-items: center;
+}
+
+.special-events-image img {
+  width: 90%; /* Full width of the container */
+  max-height: 100%; /* Full height but maintain aspect ratio */
+  object-fit: cover; /* Cover the area of the container */
+  border-radius: 20px; /* Rounded corners for the squaricle effect */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add this line */
+}
+
+.special-events-text {
+  flex: 1; /* Flex value to take half the space */
+  max-width: 50%; /* Limit the width to half of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+  align-items: flex-start; /* Align text to the left */
+  padding-left: 50px; /* Space from the image to the text */
+  line-height: 1; /* Adjust line height */
+}
+
+.about-description-text {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1em; /* Adjust font size as needed */
+  margin-top: 1em; /* Space between heading and paragraph */
+  color: #978431;
+  max-width: 40%; /* Adjust as needed to match the width of the h1 tags */
+}
+
+.special-events-heading {
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 0;
+}
+
+.text-italic {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: black;
+}
+
+.text-bold {
+  font-family: "Brokefold Sans", sans-serif;
+  color: #d5b681;
+}
+
+.text-italic,
+.text-bold {
+  font-size: 1em; /* Adjust font size as needed */
+  margin: 0;
+}
+
+.special-events-description {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: black;
+  margin-top: 20px; /* Space between heading and paragraph */
+}
+
+.contact-link {
+  display: inline-block; /* This makes the width of the element fit the content */
+  position: relative;
+  padding-bottom: 5px; /* Space for the dotted line */
+  font-family: "Georgia", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+  margin-top: 5px; /* Adjust space between the paragraph and the contact link */
+}
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Align the bottom edge of the text */
+  border-bottom: 1px dashed #978431; /* Change to dashed and the correct color */
+  width: auto; /* Let it size itself based on the content */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .special-events-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .special-events-image,
+  .special-events-text {
+    max-width: 100%;
+  }
+
+  .special-events-image {
+    justify-content: center; /* Center image in mobile view */
+    padding-bottom: 20px; /* Space below the image */
+  }
+
+  .special-events-text {
+    align-items: center; /* Center text in mobile view */
+    text-align: center;
+    padding: 0 10px; /* Padding around the text */
+  }
+
+  .about-description-text {
+    max-width: 100%; /* Allow the text to take up the full width of its container */
+  }
+
+  .contact-link::after {
+    width: 50%; /* Shorten the dotted line for a centered look on mobile */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

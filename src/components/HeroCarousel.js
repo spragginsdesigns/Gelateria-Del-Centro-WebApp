@@ -5,9 +5,9 @@ import heroImage from '../assets/carousel-image.jpg'; // Make sure the path is c
 const HeroCarousel = () => {
     return (
         <div className="heroCarousel-container">
-            <div className="heroCarousel-title">
-                Gelateria <span className="smaller">Del</span> Centro
-            </div>
+            <h1 className="heroCarousel-title">
+                Gelateria <span className="smaller">Del</span> CentrO
+            </h1>
             <img src={heroImage} alt="Gelateria Del Centro" className="heroCarousel-image" />
         </div>
     );

@@ -7,17 +7,18 @@
 .heroCarousel-title {
   position: absolute;
   width: 100%;
-  top: -15%; /* Adjust this to control the vertical positioning on desktop */
+  top: -10%; /* Adjust this to control the vertical positioning on desktop */
   left: 0;
-  font-family: "Monterio", sans-serif; /* Use the custom font for the title */
-  font-size: 12rem; /* Large font size for the title on desktop */
-  font-weight: bold; /* Bold font weight for the title */
+  font-family: "Nouveau Regular";
+  font-size: 8rem; /* Large font size for the title on desktop */
+  font-weight: normal;
   color: #f7b3a2; /* Color of the title */
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
   padding: 0.1rem 0.1rem; /* Padding around the text */
   text-align: center; /* Centers the text horizontally */
   margin: 0; /* Remove default margin */
   z-index: 2; /* Ensure the title is above the image */
+  margin: 0; /* Remove default margin */
 }
 
 .heroCarousel-image {
@@ -36,39 +37,39 @@
 @media (min-width: 1200px) {
   /* Large desktops */
   .heroCarousel-title {
-    font-size: 12rem; /* Adjust font size as needed */
-    top: -15%; /* Position the title above the image */
+    font-size: 9rem; /* Adjust font size as needed */
+    top: -10%; /* Position the title above the image */
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Small desktops */
   .heroCarousel-title {
-    font-size: 12rem; /* Adjust font size as needed */
-    top: -15%; /* Position the title above the image */
+    font-size: 6rem; /* Adjust font size as needed */
+    top: -10%; /* Position the title above the image */
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* Tablets */
   .heroCarousel-title {
-    font-size: 7rem; /* Adjust font size as needed */
-    top: -15%; /* Position the title above the image */
+    font-size: 5rem; /* Adjust font size as needed */
+    top: -10%; /* Position the title above the image */
   }
 }
 
 @media (max-width: 767px) {
   /* Mobile phones */
   .heroCarousel-title {
-    font-size: 5rem; /* Adjust font size as needed */
-    top: -20%; /* Position the title properly on mobile devices */
+    font-size: 4.3rem; /* Adjust font size as needed */
+    top: -13%; /* Position the title properly on mobile devices */
   }
 }
 
 @media (max-width: 480px) {
   /* Smaller mobile phones */
   .heroCarousel-title {
-    font-size: 2.7rem; /* Adjust font size as needed */
-    top: -12%; /* Keep the title in the same position */
+    font-size: 2.3rem; /* Adjust font size as needed */
+    top: -13%; /* Keep the title in the same position */
   }
 }

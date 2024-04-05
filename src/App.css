@@ -1,29 +1,8 @@
-/* Monterio font */
+/* Art Nouveau Font */
 @font-face {
-  font-family: "Monterio";
-  src: url("../public/fonts/MonterioRegular.ttf") format("truetype");
+  font-family: "Nouveau Regular";
+  src: url("../public/fonts/Nouveau Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monterio";
-  src: url("../public/fonts/MonterioBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monterio";
-  src: url("../public/fonts/MonterioLight.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monterio";
-  src: url("../public/fonts/MonterioSemibold.ttf") format("truetype");
-  font-weight: 600;
   font-style: normal;
 }
 

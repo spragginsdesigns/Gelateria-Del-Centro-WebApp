@@ -5,7 +5,7 @@ body {
 
 .title {
   text-align: center;
-  font-family: "Monterio", sans-serif;
+  font-family: "Nouveau Regular";
   font-size: 2em;
   color: #333;
   margin-bottom: 20px;
@@ -25,7 +25,7 @@ body {
 .events-container h4,
 .events-container h5,
 .events-container h6 {
-  font-family: "Monterio", sans-serif;
+  font-family: "Nouveau Regular";
   text-align: center;
 }
 

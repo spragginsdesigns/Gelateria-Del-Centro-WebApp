@@ -63,8 +63,6 @@ body {
   margin: 0;
 }
 
-/* Style the order-now hyperlink so it just looks like an all uppercase order now text in monterio that links you to the modal */
-
 .order-now {
   font-family: "Sofia Pro Regular";
   text-decoration: none;
