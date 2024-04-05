@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.45fe3931.css",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.c0818f18.css",
     "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.bb95f0b4.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/gelato-bike.jpeg": "/Gelateria-Del-Centro-WebApp/static/media/gelato-bike.457e07b388ca36bf2b3b.jpeg",
@@ -14,10 +14,7 @@
     "static/media/Dark_Chocolate-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Dark_Chocolate-web.53be61d92856e6435c6a.jpg",
     "static/media/Honey_Lavender-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Honey_Lavender-web.53163bff98ab2cab5197.jpg",
     "static/media/Chocolate_Strawberry-web.jpg": "/Gelateria-Del-Centro-WebApp/static/media/Chocolate_Strawberry-web.39291e686dd175399bcc.jpg",
-    "static/media/MonterioLight.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioLight.c79bae9efc447b3b4465.ttf",
-    "static/media/MonterioBold.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioBold.13a46640b2988b6d2e0d.ttf",
     "static/media/Sofia Pro Semi Bold Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Semi Bold Italic Az.a8e67fd3694b4a1b207c.woff",
-    "static/media/MonterioRegular.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioRegular.02e230443d267b5e19ae.ttf",
     "static/media/Sofia Pro Black Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Black Italic Az.0fa4f0375642ca4305ca.woff",
     "static/media/Sofia Pro Medium Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Medium Italic Az.f00f61d8ecae2de5ac9d.woff",
     "static/media/Sofia Pro Regular Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Regular Italic Az.2f1041e939e8f4f8b0e6.woff",
@@ -30,7 +27,6 @@
     "static/media/Sofia Pro Medium Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Medium Az.b7fe8af5114c9918246d.woff",
     "static/media/Sofia Pro Regular Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Regular Az.246cf6ab78b42885baa8.woff",
     "static/media/Sofia Pro ExtraLight Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro ExtraLight Az.0fab0f26eda0f25bcfa4.woff",
-    "static/media/MonterioSemibold.ttf": "/Gelateria-Del-Centro-WebApp/static/media/MonterioSemibold.4226b10273e327175ade.ttf",
     "static/media/Sofia Pro Light Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Light Az.05d31297ef63fd9a57db.woff",
     "static/media/Sofia Pro UltraLight Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro UltraLight Az.a7dc94fbdb3e3dba65a9.woff",
     "static/media/Sofia Pro Bold Italic Az.woff": "/Gelateria-Del-Centro-WebApp/static/media/Sofia Pro Bold Italic Az.86177a6bc0e9e30dcae7.woff",
@@ -44,12 +40,12 @@
     "static/media/slick.eot": "/Gelateria-Del-Centro-WebApp/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.45fe3931.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.45fe3931.css.map",
+    "main.c0818f18.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.c0818f18.css.map",
     "main.bb95f0b4.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.bb95f0b4.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45fe3931.css",
+    "static/css/main.c0818f18.css",
     "static/js/main.bb95f0b4.js"
   ]
 }
