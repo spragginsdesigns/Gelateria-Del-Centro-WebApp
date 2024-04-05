@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.f7a62d61.css",
-    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.92308847.js",
+    "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.4549f3f1.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/gelato-bike.jpeg": "/Gelateria-Del-Centro-WebApp/static/media/gelato-bike.457e07b388ca36bf2b3b.jpeg",
     "static/media/carousel-image.jpg": "/Gelateria-Del-Centro-WebApp/static/media/carousel-image.9edbcfdf19c226556612.jpg",
@@ -45,11 +45,11 @@
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
     "main.f7a62d61.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.f7a62d61.css.map",
-    "main.92308847.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.92308847.js.map",
+    "main.4549f3f1.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.4549f3f1.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7a62d61.css",
-    "static/js/main.92308847.js"
+    "static/js/main.4549f3f1.js"
   ]
 }
