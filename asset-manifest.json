@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.bc75e08e.css",
+    "main.css": "/Gelateria-Del-Centro-WebApp/static/css/main.7a083c2a.css",
     "main.js": "/Gelateria-Del-Centro-WebApp/static/js/main.f450ea15.js",
     "static/js/453.1b729c5a.chunk.js": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js",
     "static/media/gelato-bike.jpeg": "/Gelateria-Del-Centro-WebApp/static/media/gelato-bike.457e07b388ca36bf2b3b.jpeg",
@@ -35,18 +35,17 @@
     "static/media/Nouveau Regular.ttf": "/Gelateria-Del-Centro-WebApp/static/media/Nouveau Regular.8405422314017d923495.ttf",
     "static/media/blue-art-nouveau-frame-800x800.png": "/Gelateria-Del-Centro-WebApp/static/media/blue-art-nouveau-frame-800x800.dc7095c01b574d5ba20e.png",
     "static/media/BrokefoldSansBold-lg8oy.otf": "/Gelateria-Del-Centro-WebApp/static/media/BrokefoldSansBold-lg8oy.ddd828c27debb0dec9ad.otf",
-    "static/media/scallop-green.png": "/Gelateria-Del-Centro-WebApp/static/media/scallop-green.c6bfb0c9a35eb71cd30a.png",
     "index.html": "/Gelateria-Del-Centro-WebApp/index.html",
     "static/media/slick.svg": "/Gelateria-Del-Centro-WebApp/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Gelateria-Del-Centro-WebApp/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Gelateria-Del-Centro-WebApp/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Gelateria-Del-Centro-WebApp/static/media/slick.295183786cd8a1389865.woff",
-    "main.bc75e08e.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.bc75e08e.css.map",
+    "main.7a083c2a.css.map": "/Gelateria-Del-Centro-WebApp/static/css/main.7a083c2a.css.map",
     "main.f450ea15.js.map": "/Gelateria-Del-Centro-WebApp/static/js/main.f450ea15.js.map",
     "453.1b729c5a.chunk.js.map": "/Gelateria-Del-Centro-WebApp/static/js/453.1b729c5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc75e08e.css",
+    "static/css/main.7a083c2a.css",
     "static/js/main.f450ea15.js"
   ]
 }
