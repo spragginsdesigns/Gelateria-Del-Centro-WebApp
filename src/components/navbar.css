@@ -12,27 +12,49 @@ body {
   position: sticky;
   top: 0;
   height: 70px;
+  background: linear-gradient(to right, #6fa58f 70%, #e98787 30%);
+  position: relative;
+}
+
+/* Scallop effect using pseudo-element */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height for the size of the scallop */
+  background: repeating-radial-gradient(
+    circle at 50% 0,
+    transparent 0,
+    transparent 10px,
+    #fff 11px,
+    #fff 13px,
+    transparent 14px
+  );
+  background-size: 20px 20px;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-left {
-  display: flex;
-  width: 70%; /* Directly set to 70% of the navbar */
-  background-image: url("../assets/scallop-green.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 70%;
 }
 
-.navbar-left .navbar-address {
-  align-self: flex-start;
+.navbar-right {
+  justify-content: center;
+  width: 30%;
 }
 
 .navbar-address {
   font-family: "Sofia Pro SemiBold";
   color: white;
   margin: 0;
-  padding: 0;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 .navbar-address em {
@@ -41,57 +63,35 @@ body {
   text-transform: lowercase;
 }
 
-.navbar-left .home-icon {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%; /* Directly set to 30% of the navbar */
-  background-image: url("../assets/scallop-pink.png");
-  background-repeat: no-repeat;
-  background-size: cover; /* Change this from 'cover' to 'contain' */
-  background-position: center;
-  align-items: flex-start;
-}
-
-.navbar-right,
+.home-icon,
 .order-now {
-  padding: 0;
-  margin: 0;
+  text-decoration: none;
 }
 
 .order-now {
   font-family: "Sofia Pro Regular";
-  text-decoration: none;
   color: #ffffff;
   font-size: 1.6rem;
-  text-decoration: none;
-  position: relative; /* Required for positioning the pseudo-element */
-  display: inline-block; /* Ensures the pseudo-element aligns properly under the text */
+  position: relative;
+  display: inline-block;
 }
 
-/* Add this after your .order-now style */
 .order-now::after {
   content: "";
-  display: block; /* Creates a new line for the pseudo-element */
-  width: 100%; /* Matches the width of the 'Order Now' text */
-  height: 2px; /* The thickness of the dashed line */
+  display: block;
+  width: 100%;
+  height: 2px;
   background: repeating-linear-gradient(
     to right,
     #f7b3a2,
     #f7b3a2 5px,
-    /* Width of each dash */ transparent 5px,
-    /* Spacing between dashes */ transparent 10px /* Continue the pattern */
+    transparent 5px,
+    transparent 10px
   );
   position: absolute;
-  bottom: -5px; /* Adjust the space below the text */
+  bottom: -5px;
   left: 0;
 }
-
-/* Remove the browser default to underline any link */
 
 a:-webkit-any-link {
   text-decoration: none;
@@ -102,33 +102,19 @@ a:-webkit-any-link {
   color: inherit;
 }
 
-.home-icon {
-  width: 24px; /* Adjust this value to make the icon smaller or larger */
-  height: 24px; /* Adjust this value to make the icon smaller or larger */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Responsive Adjustments */
-
-@media (min-width: 769px) {
-  .navbar-address {
-    /* ... */
-    padding-left: 10px; /* Add this line */
-    /* ... */
-  }
-}
+/* The navbar scalloped border needs to only show the #6fa58f color and semi circles on mobile devices and smaller screens */
 
 @media (max-width: 768px) {
   .navbar {
-    height: 50px; /* Adjust this value to reduce the size of the navbar on mobile screens */
+    height: 60px;
   }
 
   .navbar-left {
-    display: none; /* Hide the left side of the navbar on screens smaller than 768px */
+    display: none;
   }
 
   .navbar-right {
-    width: 100%; /* Make the right side of the navbar take up the full width on screens smaller than 768px */
-    background-image: url("../assets/scallop-green.png"); /* Change the background image to the green scalloped border on screens smaller than 768px */
+    width: 100%;
   }
 }

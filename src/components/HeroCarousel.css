@@ -1,7 +1,7 @@
 .heroCarousel-container {
   position: relative;
   max-width: 100%;
-  margin-top: 6rem; /* Added space between the navbar and carousel */
+  margin-top: 8rem; /* Added space between the navbar and carousel */
 }
 
 .heroCarousel-title {
@@ -61,7 +61,7 @@
 @media (max-width: 767px) {
   /* Mobile phones */
   .heroCarousel-title {
-    font-size: 4.3rem; /* Adjust font size as needed */
+    font-size: 3rem; /* Adjust font size as needed */
     top: -13%; /* Position the title properly on mobile devices */
   }
 }
