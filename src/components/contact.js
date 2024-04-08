@@ -24,7 +24,7 @@ const ContactPage = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_fj7dt93', 'template_azx9qwb', form.current, 'CLQoNfQmZ3BsycBFw')
+        emailjs.sendForm('service_fj7dt93', 'template_azx9qwb', form.current, process.env.REACT_APP_EMAILJS_KEY)
             .then((result) => {
                 setSubmissionStatus({ message: "Message sent! We'll get back to you within 24 hours.", type: 'success' });
                 form.current.reset();
