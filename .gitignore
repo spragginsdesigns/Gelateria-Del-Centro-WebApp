@@ -10,6 +10,7 @@
 
 # production
 /build
+/pplmade-build
 
 # misc
 .DS_Store

@@ -31,7 +31,7 @@ const Navbar = ({ toggleModal }) => {
                     </Link>
                 </div>
                 <div className="navbar-right">
-                    h
+
                     <div className="order-now">
                         <Link onClick={toggleModal}>Order Now</Link>
                     </div>
