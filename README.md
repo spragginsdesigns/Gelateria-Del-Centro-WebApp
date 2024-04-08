@@ -1,12 +1,16 @@
-# Gelateria Del Centro SPA
+# Gelateria Del Centro | SPA Development Repository
 
-Welcome to the repository for the Single-Page Application (SPA) of Gelateria Del Centro. This application is a digital representation of Gelateria Del Centro, an artisan ice cream shop located in Downtown Fresno, California. We aim to provide an attractive and interactive experience for visitors. You can explore our distinctive gelato flavors, get comprehensive business information, check out our menu, read testimonials, book private events, and even order online for pickup or delivery.
+Welcome to the repository for Gelateria Del Centro's Progressive Web Application (PWA). This application serves as a digital storefront for Gelateria Del Centro, an artisan gelato shop located in Downtown Fresno, California.
+
+The application provides an interactive and engaging experience for users, allowing them to explore our unique gelato flavors, get comprehensive business information, view our menu, read testimonials, book private events, and even order online for pickup or delivery.
+
+This project is built using ReactJS, CSS3, NodeJS and much more. It is currently in the development phase, with a planned ship date in June 2024.
 
 ---
 
 ## Table of Contents
 
-- [Gelateria Del Centro SPA](#gelateria-del-centro-spa)
+- [Gelateria Del Centro | SPA Development Repository](#gelateria-del-centro--spa-development-repository)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
   - [Getting Started](#getting-started)
@@ -17,12 +21,11 @@ Welcome to the repository for the Single-Page Application (SPA) of Gelateria Del
   - [Project Structure](#project-structure)
     - [Navbar (Component)](#navbar-component)
     - [HeroCarousel (Component)](#herocarousel-component)
-    - [OurFavorites Component](#ourfavorites-component)
-    - [OurSpecials Component](#ourspecials-component)
-    - [Implementation Details](#implementation-details)
-    - [ContactFormSection (Component)](#contactformsection-component)
+    - [OurFavorites (Component)](#ourfavorites-component)
+    - [OurSpecials (Component)](#ourspecials-component)
+    - [ContactPage (Component)](#contactpage-component)
+    - [SpecialEvents (Component)](#specialevents-component)
     - [Footer (Component)](#footer-component)
-    - [Enhancements](#enhancements)
   - [Design and Aesthetic](#design-and-aesthetic)
   - [Tasks](#tasks)
     - [To-Do List](#to-do-list)
@@ -44,9 +47,17 @@ Welcome to the repository for the Single-Page Application (SPA) of Gelateria Del
 **Technologies Used:**
 
 - ![ReactJS](https://img.shields.io/badge/ReactJS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 - ![Google Maps](https://img.shields.io/badge/Google_Maps-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+- ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- ![EmailJS](https://img.shields.io/badge/EmailJS-B7178C?style=for-the-badge&logo=emailjs&logoColor=white)
+- ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+- ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+- ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 Gelateria Del Centro's SPA aims to embody the essence of our physical shop's warm, welcoming atmosphere in a digital format. Through interactive menus, engaging visuals, and streamlined online ordering, we strive to provide an exceptional user experience that mirrors the joy of savoring our handmade gelatos.
 
@@ -54,7 +65,7 @@ Gelateria Del Centro's SPA aims to embody the essence of our physical shop's war
 
 ## Getting Started
 
-You can quickly set up and run this project on your local machine by following the steps below.
+You can quickly set up and run this project on your local machine by following the steps below. The testing environment is located here<https://www.spragginsdesigns.github.io/Gelateria-Del-Centro-WebApp> and here<https://pplmade.com>
 
 ## Prerequisites
 
@@ -110,60 +121,105 @@ Ensure you have the latest versions of [Node.js](https://nodejs.org/en/download/
 
 ### Navbar (Component)
 
-- **Structure**: A navigation bar fixed at the top, displaying the address of the store on the left and a prominent "Order Now" call-to-action on the right. A scalloped border of mint-green and soft-pink for the `background-image`.
-- **React Implementation**: Implemented as a React component using `<div>` and `<nav>` elements, with `Link` components from `react-router-dom` for SPA navigation. Styled with CSS.
+This component provides a way for users to navigate to the homepage and open the order modal from anywhere on the website.
+
+The `Navbar` component is used to display a navigation bar at the top of the website. It includes the shop's address, a link to the homepage, and an "Order Now" button.
+
+- **Structure**: The `Navbar` component is a functional component in React. It uses the `useState` and `useEffect` hooks to determine whether the screen size is mobile or not. It returns a `nav` element that contains a `div` for the left side of the navbar and a `div` for the right side.
+
+- **CSS Import**: The CSS for this component is imported from `navbar.css`. This file contains the styles for the component, including the positioning and styling of the text, link, and button.
+
+- **Address**: The shop's address is displayed on the left side of the navbar. It is only displayed if the screen size is not mobile.
+
+- **Home Link**: The link to the homepage is represented by a house icon. It is created with a `Link` component from the `react-router-dom` library. The `to` prop of the `Link` component is set to `"/"`, which is the path for the homepage.
+
+- **Order Now Button**: The "Order Now" button is displayed on the right side of the navbar. It is created with a `Link` component that has an `onClick` prop that calls the `toggleModal` function. This function is passed as a prop to the `Navbar` component and is used to open the order modal.
 
 ### HeroCarousel (Component)
 
-- **Structure**: A carousel that showcases images, likely including the shop’s interior, popular flavors, and customers.
-- **React Implementation**: Utilizes the `react-slick` library for carousel functionality, encapsulated within a React functional component. Styling is applied via CSS and slick-carousel's own styles.
+This component provides a visually appealing introduction to the shop on the homepage.
 
-### OurFavorites Component
+The `HeroCarousel` component is used to display a large hero image with the shop's name on the homepage.
 
-**Structure (React):**
+- **Structure**: The `HeroCarousel` component is a functional component in React. It returns a `div` that contains an `h1` tag for the shop's name and an `img` tag for the hero image.
 
-- The `OurFavorites` component maps through an array of favorite items, each item described by properties such as `flavor`, `name`, `description`, and `image`.
-- It returns a grid of cards, where each card displays an image, the flavor of the gelato, its name (e.g., "Vegan"), and a brief description.
-- A button to download the full menu as a PDF is also provided.
+- **Image Import**: The hero image is imported from the `assets` directory and included in the JSX structure with an `img` tag. The `src` prop of the `img` tag is set to the imported image, and the `alt` prop is set to a description of the image.
 
-**Styling (CSS):**
+- **CSS Import**: The CSS for this component is imported from `HeroCarousel.css`. This file contains the styles for the component, including the positioning and styling of the text and image.
 
-- The CSS for `OurFavorites` is designed to display items in a grid layout. Using CSS Grid, the `.favorites-grid` class is styled to have three columns with a gap between them. This achieves the 3x3 layout on larger screens.
-- Responsive design adjustments ensure that the grid adjusts to two columns on larger screens and a single column on medium to smaller screens.
-- Additional styling such as borders, shadows, and padding enhance the appearance of each card within the grid.
+- **Text Content**: The `h1` tag contains the shop's name, "Gelateria Del CentrO". The `span` tag is used to make the "Del" part of the name smaller than the rest of the text. The `className` prop is used to apply CSS classes to these elements.
 
-### OurSpecials Component
+### OurFavorites (Component)
 
-**Structure (React):**
+This component provides a way for users to explore the shop's favorite gelato flavors, with a clear indication of vegan options.
 
-- Similar to `OurFavorites`, `OurSpecials` also iterates over an array of seasonal specials, constructing a grid of cards.
-- Each card in the `OurSpecials` grid displays an image, the flavor, the type (e.g., "Seasonal"), and a description of the special item.
-- This component emphasizes seasonal or temporary offerings, adding a dynamic element to the menu.
+The `OurFavorites` component is used to display a selection of the shop's favorite gelato flavors.
 
-**Styling (CSS):**
+- **Structure**: The `OurFavorites` component is a functional component in React. It uses a constant array `favorites` that contains objects representing each favorite item. Each object has properties such as `namePart1`, `namePart2`, `image`, and `vegan`. The component maps through this array and returns a grid of cards, where each card displays an image and the name of the gelato flavor, split into two parts for styling purposes. If the item is vegan, a vegan badge is also displayed.
 
-- The `OurSpecials` CSS utilizes a similar grid layout to `OurFavorites`, employing CSS Grid to arrange the specials in a 3x3 pattern on desktop views, with adjustments for responsiveness.
-- Styling customizations for `OurSpecials` may include unique color schemes or decorations that distinguish seasonal specials from the regular favorites.
+- **Image Import**: The images for the favorite items and the color bar divider line are imported from the `assets` directory and included in the JSX structure with `img` tags.
 
-### Implementation Details
+- **CSS Import**: The CSS for this component is imported from `ourFavorites.css`. This file contains the styles for the component, including the grid layout for the cards, the styling of each card, and the vegan badge.
 
-- **Grid Layout**: Both components use CSS Grid to create a 3x3 layout. The grid's column configuration is set to repeat three times (`repeat(3, 1fr)`) on larger screens, ensuring each item takes up one-third of the grid's width. Media queries adjust this layout for responsiveness.
-- **Responsive Design**: Media queries in the CSS reduce the number of columns to two or one based on the viewport width, ensuring the content remains accessible and visually appealing across devices.
-- **React Props and State**: These components can be further enhanced by using React state to dynamically load menu items or props to customize the component based on where it's used within the application.
+### OurSpecials (Component)
 
-### ContactFormSection (Component)
+This component provides a way for users to explore the shop's special gelato flavors, with a clear indication of vegan options.
 
-- **Structure**: An interactive section allowing users to send messages or inquire about private events. Includes integration with Google Maps to display the shop's location.
-- **React Implementation**: This section includes styled-components for inputs and a button, utilizing `styled-components` for styling. The form is structured with semantic HTML and styled inputs, including a Google Maps iframe integration for the map.
+The `OurSpecials` component is used to display a selection of the shop's special gelato flavors.
+
+- **Structure**: The `OurSpecials` component is a functional component in React. It uses a constant array `specials` that contains objects representing each special item. Each object has properties such as `namePart1`, `namePart2`, `image`, and `vegan`. The component maps through this array and returns a grid of cards, where each card displays an image and the name of the gelato flavor, split into two parts for styling purposes. If the item is vegan, a vegan badge is also displayed.
+
+- **Image Import**: The images for the special items and the color bar divider line are imported from the `assets` directory and included in the JSX structure with `img` tags.
+
+- **CSS Import**: The CSS for this component is imported from `ourSpecials.css`. This file contains the styles for the component, including the grid layout for the cards, the styling of each card, and the vegan badge.
+
+- **Title Line**: The `title-line` div is a decorative element that adds a horizontal line under the title of the section. This line is styled in the `ourSpecials.css` file.
+
+### ContactPage (Component)
+
+This component provides a way for users to send a message to the shop, and gives feedback to the user after a form submission.
+
+The `ContactPage` component is used to display a contact form on the website. It includes fields for the user's name, phone number, email address, and message.
+
+- **Structure**: The `ContactPage` component is a functional component in React. It returns a JSX structure that includes an image and a form with fields for the user's name, phone number, email address, and message. The form has an `onSubmit` prop that calls the `sendEmail` function when the form is submitted.
+
+- **Image Import**: The image for the contact page is imported from the `assets` directory and included in the JSX structure with an `img` tag.
+
+- **CSS Import**: The CSS for this component is imported from `contact.css`. This file contains the styles for the component, including the positioning and styling of the text and form fields.
+
+- **Form Submission**: The `sendEmail` function is called when the form is submitted. It prevents the default form submission behavior, sends the form data to a specified email service using `emailjs`, and updates the `submissionStatus` state based on the result of the email sending operation.
+
+- **Form Submission Message**: If a submission status message exists, it is displayed below the form. The message has a CSS class that corresponds to the type of the message (either 'success' or 'error').
+
+- **useEffect Hook**: The `useEffect` hook is used to clear the submission status message after a delay of 4 seconds. This is done using the `setTimeout` function. The hook also includes a cleanup function that clears the timer if the component unmounts or if another message is set before the timer expires.
+
+### SpecialEvents (Component)
+
+This component is used to showcase the special events and features of the shop, including the unique gelato bike.
+
+- **Structure**: The `SpecialEvents` component is a functional component in React. It returns a JSX structure that includes an image of the gelato bike and a description of the special events and services offered by the shop.
+
+- **Image Import**: The image of the gelato bike is imported from the `assets` directory and included in the JSX structure with an `img` tag.
+
+- **CSS Import**: The CSS for this component is imported from `specialEvents.css`. This file contains the styles for the component, including the scalloped border effect.
+
+- **ScrollLink**: The `ScrollLink` component from the `react-scroll` library is used to create a link that smoothly scrolls to the `contact` section when clicked. The `smooth` prop is set to `true` and the `duration` prop is set to `500` to create a smooth scrolling effect that lasts 500 milliseconds.
+
+- **Text Content**: The text content of the component is structured with `h1` and `p` tags. The `h1` tags contain the headings of the section, and the `p` tag contains the description of the special events and the gelato bike. The `className` prop is used to apply CSS classes to these elements.
 
 ### Footer (Component)
 
-- **Structure**: A footer displayed across all pages, containing information about the Gelateria and links to various sections like the story, menu, and contact page.
-- **React Implementation**: A styled component defining the footer's layout and style, including responsiveness for mobile devices. Links within the footer are styled and laid out using CSS and React elements.
+The `Footer` component is used to display the footer of the website. It includes the shop's name, address, a link to its location on Google Maps, and links to other pages on the website.
 
-### Enhancements
+- **Structure**: The `Footer` component is a functional component in React. It returns a JSX structure that includes the shop's name, address, a link to Google Maps, and a navigation bar with links to other pages.
 
-- **Accessibility:** Prioritize accessibility throughout development (ARIA attributes, keyboard navigation, etc.).
+- **Image Import**: The background image for the footer is imported from the `assets` directory and included in the JSX structure with a `style` prop on the `div` tag.
+
+- **CSS Import**: The CSS for this component is imported from `footer.css`. This file contains the styles for the component, including the positioning and styling of the text and navigation bar.
+
+- **Navigation Bar**: The navigation bar in the footer includes links to the "Our Story", "The Menu", and "Contact" pages. These links are created with `a` tags and have the `className` prop set to `"footer-nav-link"` to apply the corresponding CSS class.
+
+- **Google Maps Link**: The address of the shop is followed by a link to its location on Google Maps. This link is created with an `a` tag and has the `className` prop set to `"footer-map-link"` to apply the corresponding CSS class.
 
 ---
 
