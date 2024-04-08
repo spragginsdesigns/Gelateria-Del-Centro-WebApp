@@ -1,8 +1,8 @@
 // OurFavorites.js
 import React from "react";
 import "./OurFavorites.css";
+// Color Bar Divider Line (imported from assets)
 import colorBar from "../assets/color-bar.png";
-import { AttentionSeeker } from "react-awesome-reveal";
 
 // Menu Item Images (imported from assets)
 import vanillaImage from "../assets/menu-tems/web/Coconut_Milk_Indonesian_Vanilla_Bean-web.jpg";
@@ -60,30 +60,22 @@ const OurFavorites = () => {
       <p className="favorites-subtitle">Always available, always delicious</p>
       <div className="favorites-grid">
         {favorites.map((favorite, index) => (
-          // triggerOnce can be used to only trigger the animation once
-          <AttentionSeeker
-            effect="pulse"
-            duration={1500} // Increase this value to slow down the animation
-            triggerOnce={true}
-            key={index}
-          >
-            <div className="favorite-item">
-              <img
-                src={favorite.image}
-                alt={`${favorite.namePart1} ${favorite.namePart2}`}
-                className="favorite-image"
-              />
-              <div className="favorite-label">
-                <h2 className="favorite-name">
-                  <span className="flavor-part">{favorite.namePart1}</span>
-                  <span className="flavor-part">{favorite.namePart2}</span>
-                </h2>
-                {favorite.vegan && index === 0 && (
-                  <div className="favorite-checkmark">V</div>
-                )}
-              </div>
+          <div className="favorite-item" key={index}>
+            <img
+              src={favorite.image}
+              alt={`${favorite.namePart1} ${favorite.namePart2}`}
+              className="favorite-image"
+            />
+            <div className="favorite-label">
+              <h2 className="favorite-name">
+                <span className="flavor-part">{favorite.namePart1}</span>
+                <span className="flavor-part">{favorite.namePart2}</span>
+              </h2>
+              {favorite.vegan && index === 0 && (
+                <div className="favorite-checkmark">V</div>
+              )}
             </div>
-          </AttentionSeeker>
+          </div>
         ))}
       </div>
       <img src={colorBar} alt="Decorative color bar" className="color-bar" />
