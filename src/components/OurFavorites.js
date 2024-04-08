@@ -4,7 +4,7 @@ import './OurFavorites.css';
 import colorBar from '../assets/color-bar.png';
 import { AttentionSeeker } from 'react-awesome-reveal';
 
-// Replace with actual import paths for your images
+// Menu Item Images (imported from assets)
 import vanillaImage from '../assets/menu-tems/web/Coconut_Milk_Indonesian_Vanilla_Bean-web.jpg';
 import chocolateImage from '../assets/menu-tems/web/Dark_Chocolate-web.jpg';
 import caramelloImage from '../assets/menu-tems/web/Caramello_Chocolate_Crunch-web.jpg';
