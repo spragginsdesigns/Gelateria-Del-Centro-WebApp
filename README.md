@@ -278,7 +278,7 @@ Our chosen color palette embodies the rich, creamy textures and vibrant flavors 
 ## Contribution
 
 Currently, this is a closed-source project. It could be open-sourced in the future, after its release, for community transparency.
-Read the [LICENSE](LICENSE.md)
+Read the [LICENSE](LICENSE)
 
 ---
 
