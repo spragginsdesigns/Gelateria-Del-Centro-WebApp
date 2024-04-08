@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import { Link } from 'react-router-dom';
 import logo from '../assets/Gelateria Del Centro STAMP.png';
 import colorBar from '../assets/color-bar.png';
 import { Link as ScrollLink } from 'react-scroll';
