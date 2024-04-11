@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./footer.css";
 import footerBackground from "../assets/footer-background-main.jpg";
 
