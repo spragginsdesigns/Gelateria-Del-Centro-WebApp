@@ -132,6 +132,7 @@
   text-decoration: none;
   font-style: italic;
   margin-top: 5px; /* Adjust space between the paragraph and the contact link */
+  cursor: pointer;
 }
 
 .contact-link::after {
