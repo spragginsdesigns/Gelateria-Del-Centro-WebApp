@@ -103,8 +103,6 @@ a:-webkit-any-link {
 }
 
 /* Responsive Adjustments */
-/* The navbar scalloped border needs to only show the #6fa58f color and semi circles on mobile devices and smaller screens */
-
 @media (max-width: 768px) {
   .navbar {
     height: 60px;
@@ -116,5 +114,6 @@ a:-webkit-any-link {
 
   .navbar-right {
     width: 100%;
+    background: #6fa58f;
   }
 }
