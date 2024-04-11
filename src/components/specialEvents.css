@@ -3,9 +3,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px; /* Space between the image and text */
-  padding: 50px 0; /* Top and bottom padding */
-  min-height: 100vh; /* Full viewport height */
-  background: #fffdee; /* Assuming a background color is needed */
+  padding: 100px 0; /* Top and bottom padding */
+  background: #fffdee; /* Soft pink background color */
   margin-bottom: 60px; /* Space below the specialEvents component */
   margin-top: 60px; /* Space above the specialEvents component */
   position: relative;
