@@ -40,6 +40,7 @@
   margin: 0 10px; /* Spacing between links */
   text-decoration: none; /* Removes underline */
   font-weight: bold;
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .footer-nav-link:hover {
