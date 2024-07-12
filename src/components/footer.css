@@ -1,55 +1,72 @@
 /* Footer.css */
 .footer-container {
-  background-color: #000; /* Fallback for browsers that do not support images */
-  background-image: url("../assets/footer-background-main.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px; /* Adjust padding to your preference */
+	background-color: #000; /* Fallback for browsers that do not support images */
+	background-image: url("../assets/footer-background-main.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	padding: 50px 20px; /* Adjust padding to your preference */
 }
 
 .footer-title {
-  font-family: "Nouveau Regular";
-  font-size: 2.5em; /* Adjust size to your preference */
-  font-weight: normal; /* Adjust weight to your preference */
+	font-family: "Nouveau Regular";
+	font-size: 2.5em; /* Adjust size to your preference */
+	font-weight: normal; /* Adjust weight to your preference */
 }
 
 .footer-address {
-  font-family: "Sofia Pro SemiBold";
-  margin: 20px 0; /* Spacing between title and address */
+	font-family: "Sofia Pro SemiBold";
+	margin: 20px 0; /* Spacing between title and address */
 }
 
 .footer-map-link {
-  color: #ffffff; /* Adjust color to match the design */
-  text-decoration: none; /* Removes underline */
-  font-style: italic;
-  background-image: linear-gradient(to right, #f7b3a2 33%, transparent 0%);
-  background-position: 0 1.2em;
-  background-size: 3px 1px;
-  background-repeat: repeat-x;
+	color: #ffffff; /* Adjust color to match the design */
+	text-decoration: none; /* Removes underline */
+	font-style: italic;
+	background-image: linear-gradient(to right, #f7b3a2 33%, transparent 0%);
+	background-position: 0 1.2em;
+	background-size: 3px 1px;
+	background-repeat: repeat-x;
 }
 
 .footer-nav {
-  margin-top: 20px; /* Spacing between address and navigation links */
+	margin-top: 20px; /* Spacing between address and navigation links */
+	margin-bottom: 20px; /* Add space between nav and social icons */
 }
 
 .footer-nav-link {
-  font-family: "Sofia Pro Bold";
-  color: #f4e4c7; /* Adjust color to match the design */
-  margin: 0 10px; /* Spacing between links */
-  text-decoration: none; /* Removes underline */
-  font-weight: bold;
-  cursor: pointer; /* Change cursor to pointer on hover */
+	font-family: "Sofia Pro Bold";
+	color: #f4e4c7; /* Adjust color to match the design */
+	margin: 0 10px; /* Spacing between links */
+	text-decoration: none; /* Removes underline */
+	font-weight: bold;
+	cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .footer-nav-link:hover {
-  text-decoration: underline; /* Underline on hover for better user experience */
+	text-decoration: underline; /* Underline on hover for better user experience */
+}
+
+.footer-social {
+	display: flex;
+	justify-content: center;
+	gap: 20px; /* Space between social icons */
+	margin-top: 20px; /* Space above social icons */
+}
+
+.footer-social-link {
+	color: #f4e4c7; /* Match the color of the nav links */
+	transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+	color: #ffffff; /* Change color on hover */
 }
 
 /* Add any additional responsive styles as necessary */
 @media (max-width: 768px) {
-  .footer-title {
-    font-size: 2em; /* Adjust size to your preference */
-  }
+	.footer-title {
+		font-size: 2em; /* Adjust size to your preference */
+	}
 }
